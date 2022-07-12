@@ -4,7 +4,7 @@ import StartPortfolioComponent from "@/components/StartPortfolio.vue"
 const routes = [
   // Start
   {
-    path: '/',
+    path: '/portfolio/',
     name: 'StartPortfolio',
     component: StartPortfolioComponent,
     meta: {
