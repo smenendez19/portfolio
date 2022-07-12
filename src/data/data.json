@@ -1,0 +1,280 @@
+{
+    "lang": "es",
+    "data": {
+        "about_component": {
+            "about_me": "Soy Python Developer y Data Engineer trabajando desde 2019.\nEstudio Ingenieria Informatica en la UNLaM.\nSoy autodidacta y me gusta aprender nuevas tecnologias.",
+            "avatar_image": null
+        },
+        "experience_component": {
+            "job_experience": [
+                {
+                    "company": "Ualá",
+                    "image_logo": "uala-logo.png",
+                    "position": "Data Platform Engineer",
+                    "since": "Septiembre 2021",
+                    "until": "Actualidad",
+                    "description": "Trabajo en Uala como Data Engineer desde septiembre de 2019, primero en el proyecto de Datalake AWS y actualmente en el proyecto de Plataforma de Datos de Uala.",
+                    "projects": [
+                        {
+                            "name": "Datalake AWS",
+                            "description": "Datalake cloud en AWS"
+                        },
+                        {
+                            "name": "Plataforma de Datos de Uala",
+                            "description": "Plataforma de Datos alojada en GCP, utilizando GCP, Python, Docker, Kubernetes y Javascript"
+                        }
+                    ]
+                },
+                {
+                    "company": "CoderHouse",
+                    "image_logo": "coderhouse-logo.png",
+                    "position": "Tutor",
+                    "since": "Marzo 2022",
+                    "until": "Actualidad",
+                    "description": "Trabajo de manera freelance como Tutor en CoderHouse para los cursos que se presentan en programacion en Python y Django.\n"
+                },
+                {
+                    "company": "Ergo Renova",
+                    "image_logo": "ergo-logo.png",
+                    "position": "Data Engineer",
+                    "since": "Enero 2019",
+                    "until": "Septiembre 2021",
+                    "description": "Comence en Ergo Renova en enero de 2019 como Trainee y luego como Data Engineer para los proyectos con diferentes clientes de la empresa",
+                    "projects": [
+                        {
+                            "name": "Telefonica",
+                            "description": "Proyecto de Big Data para Telefonica/Movistar en Hadoop, utilizando Bash, GitLab, Python, Spark"
+                        },
+                        {
+                            "name": "TeleCom",
+                            "description": "Proyecto de Big Data cloud para TeleCom con GCP utilizando Python, GitHub, Kafka"
+                        },
+                        {
+                            "name": "GIRE",
+                            "description": "Proyecto de datos de redes sociales utilizando Oracle, Python, API Rest, SKLearn"
+                        }
+                    ]
+                }
+            ]
+        },
+        "education_component": {
+            "education": [
+                {
+                    "university": "Universidad Nacional de La Matanza",
+                    "degree": "Ingenieria Informatica",
+                    "since": "2016",
+                    "until": "Actualidad",
+                    "description": "Estudio Ingenieria Informatica en la UNLaM.\nLlevo aprobadas hasta el momento 28/42 materias.",
+                    "image_logo": "logo_unlam.png"
+                }
+            ],
+            "courses": [
+                {
+                    "course": "Professional Data Engineer",
+                    "company": "Google Cloud",
+                    "since": "Agosto 2021",
+                    "until": "Agosto 2024",
+                    "description": "Certificado de Data Cloud Engineer en Google Cloud",
+                    "url": "https://www.credential.net/6c88d297-1283-4132-b112-690ed7707579",
+                    "image_logo": null
+                },
+                {
+                    "course": "Aprende lenguaje GO (GOLANG) desde 0",
+                    "company": "Udemy",
+                    "since": "Mayo 2022",
+                    "description": "Curso de GOLANG desde cero en Udemy",
+                    "url": "https://www.udemy.com/certificate/UC-2576e1e2-d55e-4d78-9c1c-c17a0336dcd9/",
+                    "image_logo": null
+                },
+                {
+                    "course": "The Complete Hands-On Introduction to Apache Airflow",
+                    "company": "Udemy",
+                    "since": "Diciembre 2021",
+                    "description": "Curso de Airflow introductorio",
+                    "url": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-3099ee67-ad8f-4986-ad47-43ac92e52b89.pdf",
+                    "image_logo": null
+                },
+                {
+                    "course": "AWS Essentials",
+                    "company": "Udemy",
+                    "since": "Octubre 2021",
+                    "description": "Curso de AWS introductorio",
+                    "url": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-c98f07e3-d535-425a-9edc-141c8f79a3b9.pdf",
+                    "image_logo": null
+                },
+                {
+                    "course": "Desarrollo Backend Node.js",
+                    "company": "IncluIT",
+                    "since": "Septiembre 2021",
+                    "description": "Curso de NodeJS",
+                    "image_logo": null
+                },
+                {
+                    "course": "DBT Fundamentals",
+                    "company": "DBT Labs",
+                    "since": "Mayo 2022",
+                    "until": "Mayo 2024",
+                    "description": "Curso introductorio de DBT",
+                    "url": "https://www.credential.net/8143fa1e-e72a-4543-b676-45903f8d7567",
+                    "image_logo": null
+                }
+            ]
+        },
+        "contact_component": {
+            "contacts": [
+                {
+                    "type": "email",
+                    "url_text": "santiagomenendez@outlook.com",
+                    "url": null,
+                    "icon": "mdi-email"
+                },
+                {
+                    "type": "linkedin",
+                    "url_text": "linkedin.com/in/menendezsantiago",
+                    "url": "https://www.linkedin.com/in/menendezsantiago",
+                    "icon": "mdi-linkedin"
+                },
+                {
+                    "type": "github",
+                    "url_text": "github.com/SantiMenendez19",
+                    "url": "https://github.com/SantiMenendez19",
+                    "icon": "mdi-github"
+                }
+            ]
+        },
+        "skill_component": {
+            "programming_languages": [
+                {
+                    "name": "Python",
+                    "icon": "mdi-language-python"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "mdi-language-javascript"
+                },
+                {
+                    "name": "Go",
+                    "icon": "mdi-language-go"
+                },
+                {
+                    "name": "Java",
+                    "icon": "mdi-language-java"
+                },
+                {
+                    "name": "Bash",
+                    "icon": "mdi-console"
+                }
+            ],
+            "web": [
+                {
+                    "name": "Django",
+                    "icon": null
+                },
+                {
+                    "name": "FastAPI",
+                    "icon": null
+                },
+                {
+                    "name": "Vue",
+                    "icon": "mdi-vuejs"
+                },
+                {
+                    "name": "CSS",
+                    "icon": "mdi-language-css3"
+                },
+                {
+                    "name": "HTML",
+                    "icon": "mdi-language-html5"
+                },
+                {
+                    "name": "RESTful API",
+                    "icon": null
+                }
+            ],
+            "databases": [
+                {
+                    "name": "PostgreSQL",
+                    "icon": "mdi-database-search"
+                },
+                {
+                    "name": "BigQuery",
+                    "icon": "mdi-database-search"
+                },
+                {
+                    "name": "MySQL",
+                    "icon": "mdi-database-search"
+                },
+                {
+                    "name": "Hadoop",
+                    "icon": "mdi-database-search"
+                }
+            ],
+            "tech": [
+                {
+                    "name": "GCP",
+                    "icon": "mdi-google-cloud"
+                },
+                {
+                    "name": "AWS",
+                    "icon": "mdi-aws"
+                },
+                {
+                    "name": "Docker",
+                    "icon": "mdi-docker"
+                },
+                {
+                    "name": "Kubernetes",
+                    "icon": "mdi-kubernetes"
+                },
+                {
+                    "name": "Git",
+                    "icon": "mdi-git"
+                },
+                {
+                    "name": "GitHub Actions",
+                    "icon": "mdi-github"
+                },
+                {
+                    "name": "Microsoft Office",
+                    "icon": "mdi-microsoft-office"
+                },
+                {
+                    "name": "Machine Learning",
+                    "icon": null
+                },
+                {
+                    "name": "Windows",
+                    "icon": null
+                }
+            ]
+        },
+        "project_component": {
+            "projects": [
+                {
+                    "name": "To Do List",
+                    "url_github": "https://github.com/SantiMenendez19/to_do_list_web",
+                    "description": "Lista de tareas web desarrollada en Django y utilizando HTML5, Bootstrap, CSS, Python y SQLite/MongoDB como bases de datos",
+                    "image" : "projects/to_do_list.png"
+                },
+                {
+                    "name" : "Scrapper MeLi",
+                    "url_github" : "https://github.com/SantiMenendez19/scraper_web_ml",
+                    "description" : "Scrapper de productos de Mercado Libre hecho con Python y BeautifulSoup 4. Incluye una GUI para analisis de resultados rapidamente",
+                    "image" : "projects/scraper_ml.png"
+                },
+                {
+                    "name" : "Bot Ahorcado Discord",
+                    "url_github" : "https://github.com/SantiMenendez19/ahorcado_bot_discord",
+                    "description" : "Bot del juego del ahorcado para implementar en servidores de Discord realizado en Python",
+                    "image" : "projects/ahorcado_discord.png"
+                },
+                {
+                    "name" : "Snake Game",
+                    "url_github" : "https://github.com/SantiMenendez19/snake_game",
+                    "description": "Juego de Snake desarrollado en Python y aplicando algoritmos de IA para entrenar",
+                    "image" : "projects/snake_game.png"
+                }
+            ]
+        }
+    }
+}
