@@ -2,6 +2,7 @@
     "lang": "es",
     "data": {
         "about_component": {
+            "welcome" : "!Hola!, soy Santiago Menendez y este es mi Portafolio",
             "about_me": "Soy Python Developer y Data Engineer trabajando desde 2019.\nEstudio Ingenieria Informatica en la UNLaM.\nSoy autodidacta y me gusta aprender nuevas tecnologias.",
             "avatar_image": null
         },

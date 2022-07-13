@@ -1,7 +1,7 @@
 <template>
     <v-container fill-height>
         <v-row justify="center" class="my-5">
-            <h1 class="text-center">!Hola!, soy Santiago Menendez y este es mi Portafolio</h1>
+            <h1 class="text-center">{{ about.welcome }}</h1>
         </v-row>
         <v-card class="pa-5 rounded-xl" color="principal" height="500px">
             <v-row justify="center" class="mx-5 my-5">

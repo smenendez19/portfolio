@@ -30,8 +30,11 @@
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" temporary>
         <v-list density="compact" nav>
-            <div v-for="item in items">
-                <v-list-item @click="goToComponent(item)">{{ item }}</v-list-item>
+            <div v-if="lang === 'ES'" v-for="(item, i) in items_es">
+                <v-list-item @click="goToComponent(items_en[i])">{{ item.charAt(0).toUpperCase() + item.slice(1) }}</v-list-item>
+            </div>
+            <div v-else v-for="item in items_en">
+                <v-list-item @click="goToComponent(item)">{{ item.charAt(0).toUpperCase() + item.slice(1) }}</v-list-item>
             </div>
         </v-list>
     </v-navigation-drawer>
@@ -68,8 +71,11 @@ export default defineComponent({
         flag: "ar",
         lang: "ES",
         drawer: false,
-        items: [
+        items_en: [
             'about', 'experience', 'education', 'skills', 'projects', 'contact'
+        ],
+        items_es: [
+            "Sobre Mi", "Experiencia", "Educacion", "Skills", "Proyectos", "Contacto"
         ],
         tab : null
     }),
