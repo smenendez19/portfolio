@@ -1,16 +1,20 @@
-// Styles
-import '@mdi/font/css/materialdesignicons.css'
-import 'vuetify/styles'
+// Icons
+import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
 
 // Vuetify
 import { createVuetify } from 'vuetify'
 
 export default createVuetify({
+  ssr: false,
   theme: {
     defaultTheme: 'dark',
   },
   icons: {
-    iconFont: 'mdi'
+    defaultSet: 'mdi',
+    aliases,
+    sets: {
+      mdi,
+    },
   },
 }
 )

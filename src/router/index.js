@@ -1,12 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import StartPortfolioComponent from "@/components/StartPortfolio.vue"
 
 const routes = [
   // Start
   {
     path: '/portfolio/',
     name: 'StartPortfolio',
-    component: StartPortfolioComponent,
+    component: import("@/components/StartPortfolio.vue"),
     meta: {
       title: "Santiago Menendez - Portfolio"
     }

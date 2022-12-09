@@ -2,7 +2,7 @@
     "lang": "es",
     "data": {
         "about_component": {
-            "welcome" : "!Hola!, soy Santiago Menendez y este es mi Portafolio",
+            "welcome": "!Hola!, soy Santiago Menendez y este es mi Portafolio",
             "about_me": "Soy Python Developer y Data Engineer trabajando desde 2019.\nEstudio Ingenieria Informatica en la UNLaM.\nSoy autodidacta y me gusta aprender nuevas tecnologias.",
             "avatar_image": null
         },
@@ -126,20 +126,17 @@
                 {
                     "type": "email",
                     "url_text": "santiagomenendez@outlook.com",
-                    "url": null,
-                    "icon": "mdi-email"
+                    "url": null
                 },
                 {
                     "type": "linkedin",
                     "url_text": "linkedin.com/in/menendezsantiago",
-                    "url": "https://www.linkedin.com/in/menendezsantiago",
-                    "icon": "mdi-linkedin"
+                    "url": "https://www.linkedin.com/in/menendezsantiago"
                 },
                 {
                     "type": "github",
                     "url_text": "github.com/SantiMenendez19",
-                    "url": "https://github.com/SantiMenendez19",
-                    "icon": "mdi-github"
+                    "url": "https://github.com/SantiMenendez19"
                 }
             ]
         },
@@ -255,25 +252,25 @@
                     "name": "To Do List",
                     "url_github": "https://github.com/SantiMenendez19/to_do_list_web",
                     "description": "Lista de tareas web desarrollada en Django y utilizando HTML5, Bootstrap, CSS, Python y SQLite/MongoDB como bases de datos",
-                    "image" : "projects/to_do_list.png"
+                    "image": "projects/to_do_list.png"
                 },
                 {
-                    "name" : "Scrapper MeLi",
-                    "url_github" : "https://github.com/SantiMenendez19/scraper_web_ml",
-                    "description" : "Scrapper de productos de Mercado Libre hecho con Python y BeautifulSoup 4. Incluye una GUI para analisis de resultados rapidamente",
-                    "image" : "projects/scraper_ml.png"
+                    "name": "Scrapper MeLi",
+                    "url_github": "https://github.com/SantiMenendez19/scraper_web_ml",
+                    "description": "Scrapper de productos de Mercado Libre hecho con Python y BeautifulSoup 4. Incluye una GUI para analisis de resultados rapidamente",
+                    "image": "projects/scraper_ml.png"
                 },
                 {
-                    "name" : "Bot Ahorcado Discord",
-                    "url_github" : "https://github.com/SantiMenendez19/ahorcado_bot_discord",
-                    "description" : "Bot del juego del ahorcado para implementar en servidores de Discord realizado en Python",
-                    "image" : "projects/ahorcado_discord.png"
+                    "name": "Bot Ahorcado Discord",
+                    "url_github": "https://github.com/SantiMenendez19/ahorcado_bot_discord",
+                    "description": "Bot del juego del ahorcado para implementar en servidores de Discord realizado en Python",
+                    "image": "projects/ahorcado_discord.png"
                 },
                 {
-                    "name" : "Snake Game",
-                    "url_github" : "https://github.com/SantiMenendez19/snake_game",
+                    "name": "Snake Game",
+                    "url_github": "https://github.com/SantiMenendez19/snake_game",
                     "description": "Juego de Snake desarrollado en Python y aplicando algoritmos de IA para entrenar",
-                    "image" : "projects/snake_game.png"
+                    "image": "projects/snake_game.png"
                 }
             ]
         }

@@ -1,11 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify'
-import { loadFonts } from './plugins/webfontloader'
 import router from './router'
 import FlagIcon from 'vue-flag-icon'
 
-loadFonts()
+import '@/assets/css/styles.css'
 
 createApp(App)
   .use(router)
