@@ -5,7 +5,7 @@
       class="my-5"
     >
       <h1 class="text-center">
-        {{ about.welcome }}
+        {{ $t("about.welcome") }}
       </h1>
     </v-row>
     <v-card
@@ -18,15 +18,7 @@
         class="mx-5 my-5"
       >
         <v-col>
-          <div
-            v-if="lang === 'ES'"
-            class="text-start"
-          >
-            <h3>Acerca de mi...</h3>
-          </div>
-          <div v-else>
-            <h3>About me...</h3>
-          </div>
+          <h3>{{ $t("about.title") }}</h3>
         </v-col>
       </v-row>
       <v-row
@@ -43,7 +35,7 @@
           />
           <v-card-text>
             <p class="text-center">
-              {{ about.about_me }}
+              {{ $t("about.about_me") }}
             </p>
           </v-card-text>
         </v-col>
@@ -53,39 +45,21 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-import jsonData from "@/data/data.json"
-import jsonDataEN from "@/data/data_en.json"
-import avatarImage from "@/assets/images/avatar_image.png"
+import avatarImage from "/assets/images/avatar_image.png"
 
-export default defineComponent({
+export default {
   name: "AboutComponent",
   data: () => ({
-    lang: "ES",
-    about: null,
     images: {
       avatarImage
     }
   }),
   async created() {
-    const lang = localStorage.getItem('lang')
-    if (lang) {
-      this.lang = lang
-    }
-    this.getDataJSON();
   },
   methods: {
-    async getDataJSON() {
-      if (this.lang === "ES") {
-        this.about = jsonData.data.about_component;
-      } else {
-        this.about = jsonDataEN.data.about_component;
-      }
-    },
   }
-})
+}
 </script>
 
-<style>
-
+<style scoped>
 </style>

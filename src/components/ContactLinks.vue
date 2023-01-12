@@ -4,14 +4,9 @@
       justify="center"
       class="ma-auto"
     >
-      <v-col v-if="lang === 'ES'">
+      <v-col>
         <h3 class="text-center">
-          Contacto y Redes
-        </h3>
-      </v-col>
-      <v-col v-else>
-        <h3 class="text-center">
-          Contact and Social
+          {{ $t("contact.title") }}
         </h3>
       </v-col>
     </v-row>
@@ -32,12 +27,10 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
 import { mdiGithub, mdiCircleOffOutline, mdiLinkedin, mdiEmail } from '@mdi/js';
-import jsonData from "@/data/data.json";
-import jsonDataEN from "@/data/data_en.json";
+import contactData from "@/data/contacts.json";
 
-export default defineComponent({
+export default {
   name: "ContactComponent",
   setup() {
     function getIcon(type) {
@@ -52,29 +45,23 @@ export default defineComponent({
   },
   data: () => ({
     contacts : null,
-    lang : "ES",
+    lang : "es",
     icons: {
       mdiGithub
     }
   }),
   async created() {
     const lang = localStorage.getItem('lang')
-    if (lang) {
-      this.lang = lang
-    }
+    if (lang) this.lang = lang
     this.getDataJSON();
   },
   methods: {
     async getDataJSON() {
-      if (this.lang === "ES") {
-        this.contacts = jsonData.data.contact_component.contacts;
-      } else {
-        this.contacts = jsonDataEN.data.contact_component.contacts;
-      }
+      this.contacts = contactData.contacts
     },
   },
-})
+}
 </script>
 
-<style>
+<style scoped>
 </style>

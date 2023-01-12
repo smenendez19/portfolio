@@ -10,11 +10,8 @@
       >
         <v-col>
           <div class="text-start">
-            <h3 v-if="lang === 'ES'">
-              Educacion
-            </h3>
-            <h3 v-else>
-              Education
+            <h3>
+              {{ $t("education.title") }}
             </h3>
           </div>
         </v-col>
@@ -35,7 +32,7 @@
                 class="rounded-lg mx-auto"
                 width="200px"
                 height="200px"
-                :src="getImageURL('../assets/images/' + edu.image_logo)"
+                :src="'assets/images/' + edu.image_logo"
               />
             </div>
             <v-card-text>
@@ -45,17 +42,11 @@
               <p class="text-center my-1">
                 {{ edu.degree }}
               </p>
-              <p
-                v-if="lang === 'ES'"
-                class="text-center"
-              >
-                Desde {{ edu.since }} hasta {{ edu.until }}
-              </p>
-              <p
-                v-else
-                class="text-center"
-              >
-                Since {{ edu.since }} until {{ edu.until }}
+              <p class="text-center">
+                {{ $t("education.since") }} 
+                <strong>{{ edu.since }}</strong>
+                {{ $t("education.until") }} 
+                <strong>{{ edu.until }}</strong>
               </p>
               <v-divider class="my-5" />
               <p class="text-center my-5">
@@ -78,11 +69,8 @@
       >
         <v-col>
           <div class="text-start">
-            <h3 v-if="lang === 'ES'">
-              Cursos
-            </h3>
-            <h3 v-else>
-              Courses
+            <h3>
+              {{ $t("courses.title") }}
             </h3>
           </div>
         </v-col>
@@ -93,44 +81,24 @@
       >
         <v-table>
           <thead>
-            <tr v-if="lang === 'ES'">
+            <tr>
               <th class="text-center">
-                Curso
+                {{ $t("courses.fields.course") }}
               </th>
               <th class="text-center">
-                Empresa
+                {{ $t("courses.fields.company") }}
               </th>
               <th class="text-center">
-                Fecha de realizacion
+                {{ $t("courses.fields.start_date") }}
               </th>
               <th class="text-center">
-                Fecha de vencimiento
+                {{ $t("courses.fields.end_date") }}
               </th>
               <th class="text-center">
-                Descripcion
+                {{ $t("courses.fields.description") }}
               </th>
               <th class="text-center">
-                URL Certificado
-              </th>
-            </tr>
-            <tr v-else>
-              <th class="text-center">
-                Course
-              </th>
-              <th class="text-center">
-                Company
-              </th>
-              <th class="text-center">
-                Start Date
-              </th>
-              <th class="text-center">
-                End Date
-              </th>
-              <th class="text-center">
-                Description
-              </th>
-              <th class="text-center">
-                Certificate URL
+                {{ $t("courses.fields.certificate") }}
               </th>
             </tr>
           </thead>
@@ -178,25 +146,24 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-import jsonData from "@/data/data.json";
-import jsonDataEN from "@/data/data_en.json";
+import educationDataES from "@/data/education_es.json";
+import educationDataEN from "@/data/education_en.json";
+import coursesDataES from "@/data/courses_es.json";
+import coursesDataEN from "@/data/courses_en.json";
 
-export default defineComponent({
+export default {
   name: "EducationComponent",
-  setup() {
-    function getImageURL(path) {
-      return new URL(path, import.meta.url).href
-    }
-    return {
-      getImageURL
-    }
-  },
   data: () => ({
     education: null,
     courses: null,
-    lang: "ES"
+    lang: "es",
   }),
+  watch: {
+    "$i18n.locale": function(newLang) {
+      this.lang = newLang
+      this.getDataJSON()
+    }
+  },
   async created() {
     const lang = localStorage.getItem('lang')
     if (lang) {
@@ -206,17 +173,17 @@ export default defineComponent({
   },
   methods: {
     async getDataJSON() {
-      if (this.lang === "ES") {
-        this.education = jsonData.data.education_component.education;
-        this.courses = jsonData.data.education_component.courses;
+      if (this.lang === "es") {
+        this.education = educationDataES.education;
+        this.courses = coursesDataES.courses;
       } else {
-        this.education = jsonDataEN.data.education_component.education;
-        this.courses = jsonDataEN.data.education_component.courses;
+        this.education = educationDataEN.education;
+        this.courses = coursesDataEN.courses;
       }
     },
   },
-})
+}
 </script>
 
-<style>
+<style scoped>
 </style>

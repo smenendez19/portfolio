@@ -62,6 +62,16 @@
             <ContactLinksComponent />
           </div>
         </v-lazy>
+        <v-divider />
+        <v-lazy
+          id="download"
+          :options="{ threshold: 1.0 }"
+          transition="fade-in-transition"
+        >
+          <div>
+            <DownloadCVComponent />
+          </div>
+        </v-lazy>
       </v-container>
     </v-main>
     <FooterComponent />
@@ -77,6 +87,7 @@ import EducationComponent from '@/components/Education.vue'
 import ExperienceComponent from '@/components/Experience.vue'
 import SkillsComponent from '@/components/Skills.vue'
 import ProjectsComponent from '@/components/Projects.vue'
+import DownloadCVComponent from '@/components/DownloadCV.vue'
 
 export default {
   name: 'PortfolioComponent',
@@ -89,6 +100,7 @@ export default {
     ExperienceComponent,
     SkillsComponent,
     ProjectsComponent,
+    DownloadCVComponent
   },
   data: () => ({
   }),
@@ -99,3 +111,6 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+</style>

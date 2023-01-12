@@ -10,11 +10,8 @@
       >
         <v-col>
           <div class="text-start">
-            <h3 v-if="lang === 'ES'">
-              Expeciencia Laboral
-            </h3>
-            <h3 v-else>
-              Job Experience
+            <h3>
+              {{ $t("experience.title") }}
             </h3>
           </div>
         </v-col>
@@ -42,17 +39,11 @@
               <div class="text-center my-1">
                 <h4>{{ exp.position }}</h4>
               </div>
-              <p
-                v-if="lang === 'ES'"
-                class="text-center"
-              >
-                Desde {{ exp.since }} hasta {{ exp.until }}
-              </p>
-              <p
-                v-else
-                class="text-center"
-              >
-                Since {{ exp.since }} until {{ exp.until }}
+              <p class="text-center">
+                {{ $t("experience.since") }} 
+                <strong>{{ exp.since }}</strong> 
+                {{ $t("experience.until") }} 
+                <strong>{{ exp.until }}</strong>
               </p>
               <v-divider class="my-5" />
               <p class="text-center my-5 mx-15 w-200">
@@ -62,7 +53,7 @@
                 v-if="exp.projects"
                 class="text-center my-5"
               >
-                <h4>Proyectos</h4>
+                <h4>{{ $t("experience.projects") }} </h4>
                 <v-row
                   justify="center"
                   class="ma-auto"
@@ -89,37 +80,39 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-import jsonData from "@/data/data.json"
-import jsonDataEN from "@/data/data_en.json";
+import experienceDataES from "@/data/experience_es.json"
+import experienceDataEN from "@/data/experience_en.json"
 
 
-export default defineComponent({
+export default {
   name: "ExperienceComponent",
   setup() {
   },
   data: () => ({
     experience: null,
-    lang : "ES"
+    lang : "es"
   }),
+  watch: {
+    "$i18n.locale": function(newLang) {
+      this.lang = newLang
+      this.getDataJSON()
+    }
+  },
   async created() {
     const lang = localStorage.getItem('lang')
-    if (lang) {
-      this.lang = lang
-    }
-    this.getDataJSON();
+    if (lang) this.lang = lang
+    this.getDataJSON()
   },
   methods: {
     async getDataJSON() {
-      if (this.lang === "ES") {
-        this.experience = jsonData.data.experience_component.job_experience;
-      } else {
-        this.experience = jsonDataEN.data.experience_component.job_experience;
-      }
+      if (this.lang === "es") 
+        this.experience = experienceDataES.job_experience
+      else
+        this.experience = experienceDataEN.job_experience
     },
   },
-})
+}
 </script>
 
-<style>
+<style scoped>
 </style>

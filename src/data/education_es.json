@@ -1,0 +1,12 @@
+{
+    "education": [
+        {
+            "university": "Universidad Nacional de La Matanza",
+            "degree": "Ingenieria Informatica",
+            "since": "2016",
+            "until": "Actualidad",
+            "description": "Estudio Ingenieria Informatica en la UNLaM.\nLlevo aprobadas hasta el momento 28/42 materias.",
+            "image_logo": "logo_unlam.png"
+        }
+    ]
+}

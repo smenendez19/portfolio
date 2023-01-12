@@ -1,0 +1,53 @@
+{
+    "courses": [
+        {
+            "course": "Professional Data Engineer",
+            "company": "Google Cloud",
+            "since": "August 2021",
+            "until": "August 2024",
+            "description": "Certificado de Data Cloud Engineer en Google Cloud",
+            "url": "https://www.credential.net/6c88d297-1283-4132-b112-690ed7707579",
+            "image_logo": null
+        },
+        {
+            "course": "Aprende lenguaje GO (GOLANG) desde 0",
+            "company": "Udemy",
+            "since": "May 2022",
+            "description": "Curso de GOLANG desde cero en Udemy",
+            "url": "https://www.udemy.com/certificate/UC-2576e1e2-d55e-4d78-9c1c-c17a0336dcd9/",
+            "image_logo": null
+        },
+        {
+            "course": "The Complete Hands-On Introduction to Apache Airflow",
+            "company": "Udemy",
+            "since": "December 2021",
+            "description": "Curso de Airflow introductorio",
+            "url": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-3099ee67-ad8f-4986-ad47-43ac92e52b89.pdf",
+            "image_logo": null
+        },
+        {
+            "course": "AWS Essentials",
+            "company": "Udemy",
+            "since": "October 2021",
+            "description": "Curso de AWS introductorio",
+            "url": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-c98f07e3-d535-425a-9edc-141c8f79a3b9.pdf",
+            "image_logo": null
+        },
+        {
+            "course": "Desarrollo Backend Node.js",
+            "company": "IncluIT",
+            "since": "September 2021",
+            "description": "Curso de NodeJS",
+            "image_logo": null
+        },
+        {
+            "course": "DBT Fundamentals",
+            "company": "DBT Labs",
+            "since": "May 2022",
+            "until": "May 2024",
+            "description": "Curso introductorio de DBT",
+            "url": "https://www.credential.net/8143fa1e-e72a-4543-b676-45903f8d7567",
+            "image_logo": null
+        }
+    ]
+}

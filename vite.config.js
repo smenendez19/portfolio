@@ -4,6 +4,7 @@ import vuetify from 'vite-plugin-vuetify'
 import eslint from 'vite-plugin-eslint'
 import { resolve } from 'path'
 import { hash } from './src/utils/functions.js'
+import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 
 export default defineConfig({
   base: "/portfolio/",
@@ -11,6 +12,7 @@ export default defineConfig({
     vue(),
     vuetify({ autoImport: true }),
     eslint(),
+    VueI18nPlugin({ fullInstall: false }),
   ],
   server: {
     host: "0.0.0.0",

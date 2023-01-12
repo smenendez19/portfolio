@@ -10,11 +10,8 @@
       >
         <v-col>
           <div class="text-start">
-            <h3 v-if="lang === 'ES'">
-              Proyectos personales
-            </h3>
-            <h3 v-else>
-              Personal Projects
+            <h3>
+              {{ $t("projects.title") }}
             </h3>
           </div>
         </v-col>
@@ -49,11 +46,8 @@
                   :href="project.url_github"
                   target="_blank"
                 >
-                  <div v-if="lang === 'ES'">
-                    Accede al repositorio
-                  </div>
-                  <div v-else>
-                    Access to the repository
+                  <div>
+                    {{ $t("projects.url_title") }}
                   </div>
                 </a>
               </p>
@@ -66,36 +60,43 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-import jsonData from "@/data/data.json"
-import jsonDataEN from "@/data/data_en.json";
+import projectsDataES from "@/data/projects_es.json"
+import projectsDataEN from "@/data/projects_en.json";
+import { mdiOpenInNew } from '@mdi/js';
 
-export default defineComponent({
+export default {
   name: "ProjectsComponent",
   setup() {
   },
   data: () => ({
     projects: null,
-    lang: "ES"
+    lang: "es",
+    icons: {
+      mdiOpenInNew
+    }
   }),
+  watch: {
+    "$i18n.locale": function(newLang) {
+      this.lang = newLang
+      this.getDataJSON()
+    }
+  },
   async created() {
     const lang = localStorage.getItem('lang')
-    if (lang) {
+    if (lang)
       this.lang = lang
-    }
-    this.getDataJSON();
+    this.getDataJSON()
   },
   methods: {
     async getDataJSON() {
-      if (this.lang === "ES") {
-        this.projects = jsonData.data.project_component.projects;
-      } else {
-        this.projects = jsonDataEN.data.project_component.projects;
-      }
+      if (this.lang === "es")
+        this.projects = projectsDataES.projects;
+      else
+        this.projects = projectsDataEN.projects;
     },
   },
-})
+}
 </script>
 
-<style>
+<style scoped>
 </style>

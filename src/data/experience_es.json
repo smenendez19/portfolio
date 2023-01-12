@@ -1,0 +1,52 @@
+{
+    "job_experience": [
+        {
+            "company": "Ualá",
+            "image_logo": "uala-logo.png",
+            "position": "Data Platform Engineer",
+            "since": "Septiembre 2021",
+            "until": "Actualidad",
+            "description": "Trabajo en Uala como Data Engineer desde septiembre de 2019, primero en el proyecto de Datalake AWS y actualmente en el proyecto de Plataforma de Datos de Uala.",
+            "projects": [
+                {
+                    "name": "Datalake AWS",
+                    "description": "Datalake cloud en AWS"
+                },
+                {
+                    "name": "Plataforma de Datos de Uala",
+                    "description": "Plataforma de Datos alojada en GCP, utilizando GCP, Python, Docker, Kubernetes y Javascript"
+                }
+            ]
+        },
+        {
+            "company": "CoderHouse",
+            "image_logo": "coderhouse-logo.png",
+            "position": "Tutor",
+            "since": "Marzo 2022",
+            "until": "Julio 2022",
+            "description": "Trabajo de manera freelance como Tutor en CoderHouse para los cursos que se presentan en programacion en Python y Django.\n"
+        },
+        {
+            "company": "Ergo Renova",
+            "image_logo": "ergo-logo.png",
+            "position": "Data Engineer",
+            "since": "Enero 2019",
+            "until": "Septiembre 2021",
+            "description": "Comence en Ergo Renova en enero de 2019 como Trainee y luego como Data Engineer para los proyectos con diferentes clientes de la empresa",
+            "projects": [
+                {
+                    "name": "Telefonica",
+                    "description": "Proyecto de Big Data para Telefonica/Movistar en Hadoop, utilizando Bash, GitLab, Python, Spark"
+                },
+                {
+                    "name": "TeleCom",
+                    "description": "Proyecto de Big Data cloud para TeleCom con GCP utilizando Python, GitHub, Kafka"
+                },
+                {
+                    "name": "GIRE",
+                    "description": "Proyecto de datos de redes sociales utilizando Oracle, Python, API Rest, SKLearn"
+                }
+            ]
+        }
+    ]
+}

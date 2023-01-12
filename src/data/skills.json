@@ -1,0 +1,106 @@
+{
+    "programming_languages": [
+        {
+            "name": "Python",
+            "icon": "python"
+        },
+        {
+            "name": "JavaScript",
+            "icon": "javascript"
+        },
+        {
+            "name": "Go",
+            "icon": "go"
+        },
+        {
+            "name": "Java",
+            "icon": "java"
+        },
+        {
+            "name": "Bash",
+            "icon": "console"
+        }
+    ],
+    "web": [
+        {
+            "name": "Django",
+            "icon": null
+        },
+        {
+            "name": "FastAPI",
+            "icon": null
+        },
+        {
+            "name": "Vue",
+            "icon": "vue"
+        },
+        {
+            "name": "CSS",
+            "icon": "css"
+        },
+        {
+            "name": "HTML",
+            "icon": "html"
+        },
+        {
+            "name": "RESTful API",
+            "icon": null
+        }
+    ],
+    "databases": [
+        {
+            "name": "PostgreSQL",
+            "icon": "database"
+        },
+        {
+            "name": "BigQuery",
+            "icon": "database"
+        },
+        {
+            "name": "MySQL",
+            "icon": "database"
+        },
+        {
+            "name": "Hadoop",
+            "icon": "database"
+        }
+    ],
+    "tech": [
+        {
+            "name": "GCP",
+            "icon": "gcp"
+        },
+        {
+            "name": "AWS",
+            "icon": "aws"
+        },
+        {
+            "name": "Docker",
+            "icon": "docker"
+        },
+        {
+            "name": "Kubernetes",
+            "icon": "kubernetes"
+        },
+        {
+            "name": "Git",
+            "icon": "git"
+        },
+        {
+            "name": "GitHub Actions",
+            "icon": "github"
+        },
+        {
+            "name": "Microsoft Office",
+            "icon": "office"
+        },
+        {
+            "name": "Machine Learning",
+            "icon": null
+        },
+        {
+            "name": "Windows",
+            "icon": null
+        }
+    ]
+}

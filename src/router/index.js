@@ -5,7 +5,7 @@ const routes = [
   {
     path: '/portfolio/',
     name: 'StartPortfolio',
-    component: import("@/components/StartPortfolio.vue"),
+    component: () => import("@/components/StartPortfolio.vue"),
     meta: {
       title: "Santiago Menendez - Portfolio"
     }

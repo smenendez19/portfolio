@@ -6,6 +6,8 @@
 - Estructuracion de carpetas y archivos.
 - Agregado de funciones en utils.
 - Modificacion de todos los componentes actualizados a Vuetify 3.
+- Utilizacion de I18n.
+- Agregado de descarga de CV.
 
 ## 1.0.0
 

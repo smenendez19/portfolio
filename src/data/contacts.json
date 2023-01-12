@@ -1,0 +1,22 @@
+{
+    "contacts": [
+        {
+            "type": "email",
+            "url_text": "santiagomenendez@outlook.com",
+            "url": null,
+            "icon": "mdi-email"
+        },
+        {
+            "type": "linkedin",
+            "url_text": "linkedin.com/in/menendezsantiago",
+            "url": "https://www.linkedin.com/in/menendezsantiago",
+            "icon": "mdi-linkedin"
+        },
+        {
+            "type": "github",
+            "url_text": "github.com/SantiMenendez19",
+            "url": "https://github.com/SantiMenendez19",
+            "icon": "mdi-github"
+        }
+    ]
+}

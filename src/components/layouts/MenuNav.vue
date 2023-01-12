@@ -1,67 +1,78 @@
 <template>
   <v-app-bar
-    app
-    :elevate-on-scroll="true"
+    height="50"
   >
     <v-app-bar-nav-icon
-      class="d-flex d-sm-none d-md-none"
+      class="d-flex d-sm-none d-md-none d-lg-none d-xl-none"
       @click="drawer=true"
     />
-    <v-app-bar-title>Santiago Menendez</v-app-bar-title>
     <v-row
-      class="d-none d-sm-flex"
       justify="start"
     >
-      <v-tabs
-        v-if="lang === 'ES'"
-        v-model="tab"
+      <v-col
+        cols="12"
+        class=""
       >
-        <v-tab @click="goToComponent('about')">
-          Acerca de Mi
-        </v-tab>
-        <v-tab @click="goToComponent('experience')">
-          Experiencia
-        </v-tab>
-        <v-tab @click="goToComponent('education')">
-          Educacion y Cursos
-        </v-tab>
-        <v-tab @click="goToComponent('skills')">
-          Skills
-        </v-tab>
-        <v-tab @click="goToComponent('projects')">
-          Proyectos
-        </v-tab>
-        <v-tab @click="goToComponent('contact')">
-          Contacto
-        </v-tab>
-      </v-tabs>
-      <v-tabs v-else>
-        <v-tab @click="goToComponent('about')">
-          About me
-        </v-tab>
-        <v-tab @click="goToComponent('experience')">
-          Experience
-        </v-tab>
-        <v-tab @click="goToComponent('education')">
-          Education and Courses
-        </v-tab>
-        <v-tab @click="goToComponent('skills')">
-          Skills
-        </v-tab>
-        <v-tab @click="goToComponent('projects')">
-          Projects
-        </v-tab>
-        <v-tab @click="goToComponent('contact')">
-          Contact
-        </v-tab>
-      </v-tabs>
+        <v-btn href="/">
+          <h3>Santiago Menendez</h3>
+        </v-btn>
+      </v-col>
     </v-row>
-    <v-btn @click="toggleTheme">
-      <v-icon>mdi-brightness-6</v-icon>
+    <v-tabs
+      v-model="tab"
+      class="d-none d-sm-flex"
+      center-active
+      dark
+      show-arrows
+      hide-slider
+    >
+      <v-tab @click="goToComponent('about')">
+        {{ $t("menu.about") }}
+      </v-tab>
+      <v-tab @click="goToComponent('experience')">
+        {{ $t("menu.experience") }}
+      </v-tab>
+      <v-tab @click="goToComponent('education')">
+        {{ $t("menu.education") }}
+      </v-tab>
+      <v-tab @click="goToComponent('skills')">
+        {{ $t("menu.skills") }}
+      </v-tab>
+      <v-tab @click="goToComponent('projects')">
+        {{ $t("menu.projects") }}
+      </v-tab>
+      <v-tab @click="goToComponent('contact')">
+        {{ $t("menu.contact") }}
+      </v-tab>
+      <v-tab @click="goToComponent('download')">
+        {{ $t("menu.download") }}
+      </v-tab>
+    </v-tabs>
+    <v-spacer />
+    <v-btn
+      class="mr-2"
+      @click="toggleTheme"
+    >
+      <v-icon :icon="icons.mdiBrightness6" />
     </v-btn>
     <v-btn @click="changeLang">
-      <flag :iso="flag" />
-      {{ lang }}
+      <v-avatar
+        class="mr-2"
+        size="24"
+        tile
+      >
+        <img
+          v-if="lang === 'es'"
+          :src="icons.flagArg"
+        >
+        <img
+          v-else
+          :src="icons.flagUSA"
+        >
+      </v-avatar>
+      <div class="mr-2">
+        {{ lang }}
+      </div>
     </v-btn>
   </v-app-bar>
   <v-navigation-drawer
@@ -72,22 +83,12 @@
       density="compact"
       nav
     >
-      <div v-if="lang === 'ES'">
+      <div>
         <div
-          v-for="(item, i) in items_es"
+          v-for="(item, i) in items"
           :key="item"
         >
-          <v-list-item @click="goToComponent(items_en[i])">
-            {{ item.charAt(0).toUpperCase() + item.slice(1) }}
-          </v-list-item>
-        </div>
-      </div>
-      <div v-else>
-        <div
-          v-for="item in items_en"
-          :key="item"
-        >
-          <v-list-item @click="goToComponent(item)">
+          <v-list-item @click="goToComponent(components[i])">
             {{ item.charAt(0).toUpperCase() + item.slice(1) }}
           </v-list-item>
         </div>
@@ -97,59 +98,103 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
 import { useTheme } from 'vuetify'
+import { mdiBrightness6 } from '@mdi/js';
+import flagArg from "@/assets/icons/flags/argentina.png"
+import flagUSA from "@/assets/icons/flags/usa.png"
 
-export default defineComponent({
+export default {
   name: "MenuNavComponent",
   setup() {
     const theme = useTheme()
-
+    const themeValue = localStorage.getItem('theme')
+    if (themeValue) {
+      if (themeValue === 'dark') {
+        theme.global.name.value =  'dark'
+      }
+      else if (themeValue === 'light') {
+        theme.global.name.value =  'light'
+      }
+    }
+    else theme.global.name.value =  'dark'
     return {
       theme,
-      toggleTheme: () => theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+      toggleTheme: () => {
+        const themeValue = localStorage.getItem('theme')
+        if (themeValue) {
+          if (themeValue === 'dark') {
+            localStorage.setItem('theme', 'light')
+            theme.global.name.value =  'light'
+          }
+          else {
+            localStorage.setItem('theme', 'dark')
+            theme.global.name.value =  'dark'
+          }
+        }
+        else {
+          localStorage.setItem('theme', 'dark')
+        }
+      }
     }
   },
   data: () => ({
-    flag: "ar",
-    lang: "ES",
+    lang: "es",
     drawer: false,
-    items_en: [
-      'about', 'experience', 'education', 'skills', 'projects', 'contact'
-    ],
-    items_es: [
-      "Sobre Mi", "Experiencia", "Educacion", "Skills", "Proyectos", "Contacto"
-    ],
-    tab : null
+    tab : null,
+    icons: {
+      mdiBrightness6,
+      flagArg,
+      flagUSA
+    },
+    components: [
+      "about",
+      "experience",
+      "education",
+      "skills",
+      "projects",
+      "contact",
+      "download"
+    ]
   }),
+  computed: {
+    items() {
+      return [
+        this.$t("menu.about"),
+        this.$t("menu.experience"),
+        this.$t("menu.education"),
+        this.$t("menu.skills"),
+        this.$t("menu.projects"),
+        this.$t("menu.contact"),
+        this.$t("menu.download"),
+      ]
+    }
+  },
   async created() {
     const lang = localStorage.getItem('lang')
     if (lang) {
       this.lang = lang
     }
     else {
-      this.lang = "ES"
+      this.lang = "es"
       localStorage.setItem('lang', this.lang)
     }
-    this.flag = lang === "ES" ? "ar" : "us"
   },
   methods: {
     async goToComponent(componentId) {
-      document.getElementById(componentId).scrollIntoView({ behavior: "smooth" });
-      if (this.drawer) this.drawer = false;
+      document.getElementById(componentId.toLowerCase()).scrollIntoView({ behavior: "smooth" })
+      if (this.drawer) this.drawer = false
     },
     async changeLang() {
-      const lang = this.lang === 'ES' ? 'EN' : 'ES'
+      const lang = this.lang === 'es' ? 'en' : 'es'
       this.lang = lang
+      this.$i18n.locale = lang.toLowerCase()
       localStorage.setItem('lang', this.lang)
-      this.flag = this.lang === 'EN' ? "us" : "ar"
-      window.location.reload()
     }
   }
-})
+}
 </script>
 
-<style>
+<style scoped>
 .fixed-bar {
     position: sticky;
     top: 6em;

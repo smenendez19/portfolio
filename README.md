@@ -19,3 +19,15 @@ Construir la distribucion
 Testear la distribucion creada
 
 `npm run preview`
+
+## Librerias
+
+Las librerias que utiliza el portfolio son las siguientes:
+
+- Vue 3
+- Vuetify 3
+- Material Design Icons
+- I18N
+- Vite
+- Vue Router
+- Eslint

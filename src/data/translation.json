@@ -1,0 +1,116 @@
+{
+    "en": {
+        "menu": {
+            "about": "About Me",
+            "experience": "Experience",
+            "education": "Education",
+            "skills": "Skills",
+            "projects": "Projects",
+            "contact": "Contact",
+            "download": "Download"
+        },
+        "about": {
+            "title": "About me...",
+            "welcome": "!Welcome!, Im Santiago Menendez and this is my Portfolio",
+            "about_me": "Im Python Developer and Data Engineer since 2019.\nStuding Computer Engineer in UNLaM.\nIm like learning new technologies and im self learning."
+        },
+        "experience": {
+            "title": "Job experience",
+            "since": "Since",
+            "until": "Until",
+            "projects": "Projects"
+        },
+        "education": {
+            "title": "Education",
+            "since": "Since",
+            "until": "Until"
+        },
+        "courses": {
+            "title": "Courses",
+            "fields": {
+                "course": "Course",
+                "company": "Company",
+                "start_date": "Start Date",
+                "end_date": "End Date",
+                "description": "Description",
+                "certificate": "Certificate URL"
+            }
+        },
+        "skills": {
+            "title": "Skills and Techs",
+            "types": {
+                "programming_languages": "Programming Languages",
+                "web": "Web",
+                "databases": "Databases",
+                "other": "Other technologies"
+            }
+        },
+        "projects": {
+            "title": "Projects",
+            "url_title": "Access to the repository"
+        },
+        "contact": {
+            "title": "Contact"
+        },
+        "footer": {
+            "text": "Project developed with Vue.js"
+        }
+    },
+    "es": {
+        "menu": {
+            "about": "Sobre Mi",
+            "experience": "Experiencia",
+            "education": "Educación",
+            "skills": "Habilidades",
+            "projects": "Proyectos",
+            "contact": "Contacto",
+            "download": "Descarga"
+        },
+        "about": {
+            "title": "Sobre mi...",
+            "welcome": "!Hola!, soy Santiago Menendez y este es mi Portafolio",
+            "about_me": "Soy Python Developer y Data Engineer trabajando desde 2019.\nEstudio Ingenieria Informatica en la UNLaM.\nSoy autodidacta y me gusta aprender nuevas tecnologias."
+        },
+        "experience": {
+            "title": "Experiencia laboral",
+            "since": "Desde",
+            "until": "Hasta",
+            "projects": "Proyectos"
+        },
+        "education": {
+            "title": "Educacion",
+            "since": "Desde",
+            "until": "Hasta"
+        },
+        "courses": {
+            "title": "Cursos y Certificados",
+            "fields": {
+                "course": "Curso",
+                "company": "Empresa",
+                "start_date": "Fecha de inicio",
+                "end_date": "Vencimiento",
+                "description": "Descripcion",
+                "certificate": "Certificado URL"
+            }
+        },
+        "skills": {
+            "title": "Habilidades y Tecnologias",
+            "types": {
+                "programming_languages": "Lenguajes de programacion",
+                "web": "Web",
+                "databases": "Bases de datos",
+                "other": "Tecnologias"
+            }
+        },
+        "projects": {
+            "title": "Proyectos",
+            "url_title": "Acceso al repositorio"
+        },
+        "contact": {
+            "title": "Contacto"
+        },
+        "footer": {
+            "text": "Proyecto realizado con Vue.js"
+        }
+    }
+}

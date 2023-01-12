@@ -10,21 +10,15 @@
       >
         <v-col>
           <div class="text-start">
-            <h3 v-if="lang === 'ES'">
-              Habilidades y Tecnologias
-            </h3>
-            <h3 v-else>
-              Skills and Tech
+            <h3>
+              {{ $t("skills.title") }}
             </h3>
           </div>
         </v-col>
       </v-row>
       <v-row class="ma-5">
-        <h4 v-if="lang === 'ES'">
-          Lenguajes de Programacion
-        </h4>
-        <h4 v-else>
-          Programming Languages
+        <h4>
+          {{ $t("skills.types.programming_languages") }}
         </h4>
       </v-row>
       <v-row class="ma-5">
@@ -39,14 +33,14 @@
             <p class="text-center">
               <v-icon
                 v-if="skill.icon"
-                :icon="skill.icon"
+                :icon="getIcon(skill.icon)"
               />{{ skill.name }}
             </p>
           </v-card>
         </div>
       </v-row>
       <v-row class="ma-5">
-        <h4>Web</h4>
+        <h4>{{ $t("skills.types.web") }}</h4>
       </v-row>
       <v-row class="ma-5">
         <div class="d-flex align-content-start flex-wrap">
@@ -60,18 +54,15 @@
             <p class="text-center">
               <v-icon
                 v-if="skill.icon"
-                :icon="skill.icon"
+                :icon="getIcon(skill.icon)"
               />{{ skill.name }}
             </p>
           </v-card>
         </div>
       </v-row>
       <v-row class="ma-5">
-        <h4 v-if="lang === 'ES'">
-          Bases de Datos
-        </h4>
-        <h4 v-else>
-          Databases
+        <h4>
+          {{ $t("skills.types.databases") }}
         </h4>
       </v-row>
       <v-row class="ma-5">
@@ -86,7 +77,7 @@
             <p class="text-center">
               <v-icon
                 v-if="skill.icon"
-                :icon="skill.icon"
+                :icon="getIcon(skill.icon)"
               />
               {{ skill.name }}
             </p>
@@ -94,11 +85,8 @@
         </div>
       </v-row>
       <v-row class="ma-5">
-        <h4 v-if="lang === 'ES'">
-          Tecnologias
-        </h4>
-        <h4 v-else>
-          Technologies
+        <h4>
+          {{ $t("skills.types.other") }}
         </h4>
       </v-row>
       <v-row class="ma-5">
@@ -113,7 +101,7 @@
             <p class="text-center">
               <v-icon
                 v-if="skill.icon"
-                :icon="skill.icon"
+                :icon="getIcon(skill.icon)"
               />{{ skill.name }}
             </p>
           </v-card>
@@ -124,36 +112,51 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-import jsonData from "@/data/data.json"
-import jsonDataEN from "@/data/data_en.json";
+import skillsData from "@/data/skills.json"
+import { mdiLanguagePython, mdiCircleOffOutline, mdiLanguageJavascript, mdiLanguageGo, mdiLanguageJava, mdiConsole, mdiVuejs, mdiLanguageCss3, mdiLanguageHtml5, mdiDatabaseSearch, mdiGoogleCloud, mdiAws, mdiDocker, mdiKubernetes, mdiGit, mdiGithub, mdiMicrosoftOffice } from '@mdi/js';
 
-export default defineComponent({
+export default {
   name: "SkillsComponent",
   setup() {
+    function getIcon(type) {
+      if (type === "github") return mdiGithub
+      else if (type === "python") return mdiLanguagePython
+      else if (type === "javascript") return mdiLanguageJavascript
+      else if (type === "go") return mdiLanguageGo
+      else if (type === "java") return mdiLanguageJava
+      else if (type === "console") return mdiConsole
+      else if (type === "vue") return mdiVuejs
+      else if (type === "css") return mdiLanguageCss3
+      else if (type === "html") return mdiLanguageHtml5
+      else if (type === "database") return mdiDatabaseSearch
+      else if (type === "gcp") return mdiGoogleCloud
+      else if (type === "aws") return mdiAws
+      else if (type === "docker") return mdiDocker
+      else if (type === "kubernetes") return mdiKubernetes
+      else if (type === "git") return mdiGit
+      else if (type === "office") return mdiMicrosoftOffice
+      return mdiCircleOffOutline
+    }
+    return {
+      getIcon
+    }
   },
   data: () => ({
     skills: null,
-    lang : "ES",
+    lang : "es",
   }),
   async created() {
     const lang = localStorage.getItem('lang')
-    if (lang) {
-      this.lang = lang
-    }
+    if (lang) this.lang = lang
     this.getDataJSON();
   },
   methods: {
     async getDataJSON() {
-      if (this.lang === "ES") {
-        this.skills = jsonData.data.skill_component;
-      } else {
-        this.skills = jsonDataEN.data.skill_component;
-      }
+      this.skills = skillsData;
     },
   },
-})
+}
 </script>
 
-<style>
+<style scoped>
 </style>

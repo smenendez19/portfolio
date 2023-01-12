@@ -1,0 +1,52 @@
+{
+    "job_experience": [
+        {
+            "company": "Ualá",
+            "image_logo": "uala-logo.png",
+            "position": "Data Platform Engineer",
+            "since": "September 2021",
+            "until": "Actually",
+            "description" : "Im working in Uala as Data Engineer since september 2019, first in the Datalake AWS project and later in the Data Platform GCP",
+            "projects": [
+                {
+                    "name": "Datalake AWS",
+                    "description": "Datalake cloud in AWS"
+                },
+                {
+                    "name": "Data Platform Uala",
+                    "description": "Data Platform in GCP, using Python, Docker, Kubernetes y Javascript"
+                }
+            ]
+        },
+        {
+            "company": "CoderHouse",
+            "image_logo": "coderhouse-logo.png",
+            "position": "Tutor",
+            "since": "March 2022",
+            "until": "July 2022",
+            "description": "Working freelance as Tutor in CoderHouse for the Python and Django Courses."
+        },
+        {
+            "company": "Ergo Renova",
+            "image_logo": "ergo-logo.png",
+            "position": "Data Engineer",
+            "since": "January 2019",
+            "until": "September 2021",
+            "description" : "Im started working in Ergo Renova in january 2019 as Trainee and later as Data Engineer for the clients and proyects in the company.",
+            "projects": [
+                {
+                    "name": "Telefonica",
+                    "description": "Big Data project for Telefonica/Movistar in Hadoop, using Bash, GitLab, Python, Spark"
+                },
+                {
+                    "name": "TeleCom",
+                    "description": "Big Data project cloud for TeleCom with GCP using Python, GitHub, Kafka"
+                },
+                {
+                    "name": "GIRE",
+                    "description": "Big Data project for social media using Oracle, Python, API Rest, SKLearn"
+                }
+            ]
+        }
+    ]
+}

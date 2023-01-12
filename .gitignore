@@ -1,3 +1,6 @@
+# Packages
+package-lock.json
+
 # Logs
 logs
 *.log
@@ -23,6 +26,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Packages
-package-lock.json
