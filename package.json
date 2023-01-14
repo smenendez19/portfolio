@@ -12,7 +12,7 @@
     "dependencies": {
         "@intlify/unplugin-vue-i18n": "^0.8.1",
         "@mdi/js": "^7.1.96",
-        "eslint-plugin-vue": "^9.8.0",
+        "eslint-plugin-vue": "^9.9.0",
         "vite-plugin-vuetify": "^1.0.1",
         "vue": "^3.2.45",
         "vue-i18n": "^9.2.2",
