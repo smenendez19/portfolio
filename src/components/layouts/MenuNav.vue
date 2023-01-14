@@ -13,7 +13,7 @@
         cols="12"
         class=""
       >
-        <v-btn href="/">
+        <v-btn href="/portfolio/">
           <h3>Santiago Menendez</h3>
         </v-btn>
       </v-col>
