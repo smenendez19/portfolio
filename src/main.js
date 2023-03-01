@@ -7,8 +7,12 @@ import { createI18n } from 'vue-i18n'
 import messages from "@/data/translation.json"
 import '@/assets/css/styles.css'
 
+const lang = localStorage.getItem('lang')
+
+console.log(lang)
+
 const i18n = createI18n({
-  locale: (localStorage.getItem('lang').toLowerCase() || 'en'),
+  locale: (lang || 'en'),
   fallbackLocale: 'en',
   legacy: true,
   sync: true,
