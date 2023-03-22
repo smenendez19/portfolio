@@ -63,6 +63,10 @@
         {
             "name": "Hadoop",
             "icon": "database"
+        },
+        {
+            "name": "RedShift",
+            "icon": "database"
         }
     ],
     "tech": [
@@ -100,6 +104,14 @@
         },
         {
             "name": "Windows",
+            "icon": null
+        },
+        {
+            "name": "Terraform",
+            "icon": null
+        },
+        {
+            "name": "Linux",
             "icon": null
         }
     ]

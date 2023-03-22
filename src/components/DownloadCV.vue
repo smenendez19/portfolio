@@ -5,7 +5,7 @@
   >
     <v-col>
       <h3 class="text-center">
-        Download CV
+        {{ $t("downloadCV.title") }}
       </h3>
     </v-col>
   </v-row>
@@ -25,7 +25,7 @@
           :icon="icons.mdiDownload"
         />
       </v-btn>
-      <div>Spanish</div>
+      <div>Español</div>
     </v-col>
     <v-col class="text-center">
       <v-btn

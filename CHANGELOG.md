@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.2.0
+
+- Correccion de traducciones.
+- Actualizacion de informacion a 2023.
+
 ## 1.1.0
 
 - Actualizacion de librerias.

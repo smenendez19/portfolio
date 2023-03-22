@@ -3,10 +3,24 @@
         {
             "company": "Ualá",
             "image_logo": "uala-logo.png",
+            "position": "Backend Developer",
+            "since": "Febrero 2023",
+            "until": "Actualidad",
+            "description": "Trabajo en Uala como Backend Developer desde febrero de 2023",
+            "projects": [
+                {
+                    "name": "Plataforma",
+                    "description": "Trabajo para el equipo de plataforma de Uala manteniendo y desarrollando los servicios de la aplicacion usando Java, Python, Golang y Terraform en AWS"
+                }
+            ]
+        },
+        {
+            "company": "Ualá",
+            "image_logo": "uala-logo.png",
             "position": "Data Platform Engineer",
             "since": "Septiembre 2021",
-            "until": "Actualidad",
-            "description": "Trabajo en Uala como Data Engineer desde septiembre de 2019, primero en el proyecto de Datalake AWS y actualmente en el proyecto de Plataforma de Datos de Uala.",
+            "until": "Febrero 2023",
+            "description": "Trabaje en Uala como Data Engineer desde septiembre de 2019, primero en el proyecto de Datalake AWS y actualmente en el proyecto de Plataforma de Datos de Uala.",
             "projects": [
                 {
                     "name": "Datalake AWS",
@@ -24,7 +38,13 @@
             "position": "Tutor",
             "since": "Marzo 2022",
             "until": "Julio 2022",
-            "description": "Trabajo de manera freelance como Tutor en CoderHouse para los cursos que se presentan en programacion en Python y Django.\n"
+            "description": "Trabaje de manera freelance como Tutor en CoderHouse para cursos de la plataforma\n",
+            "projects": [
+                {
+                    "name": "Curso Introductorio de Python",
+                    "description": "Fui tutor para los cursos introductorios de Python dados por la plataforma CoderHouse donde se enseñan los conceptos fundamentales de Python y Django como framework para backend web"
+                }
+            ]
         },
         {
             "company": "Ergo Renova",
@@ -32,7 +52,7 @@
             "position": "Data Engineer",
             "since": "Enero 2019",
             "until": "Septiembre 2021",
-            "description": "Comence en Ergo Renova en enero de 2019 como Trainee y luego como Data Engineer para los proyectos con diferentes clientes de la empresa",
+            "description": "Comenze en Ergo Renova en enero de 2019 como Trainee y luego como Data Engineer para los proyectos con diferentes clientes de la empresa",
             "projects": [
                 {
                     "name": "Telefonica",

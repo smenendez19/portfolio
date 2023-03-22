@@ -12,7 +12,7 @@
         "about": {
             "title": "About me...",
             "welcome": "!Welcome!, Im Santiago Menendez and this is my Portfolio",
-            "about_me": "Im Python Developer and Data Engineer since 2019.\nStuding Computer Engineer in UNLaM.\nIm like learning new technologies and im self learning."
+            "about_me": "Im Backend Developer\nStuding Computer Engineer in UNLaM\nIm like learning new technologies and im self taught."
         },
         "experience": {
             "title": "Job experience",
@@ -54,6 +54,9 @@
         },
         "footer": {
             "text": "Project developed with Vue.js"
+        },
+        "downloadCV": {
+            "title": "Download Resume"
         }
     },
     "es": {
@@ -69,7 +72,7 @@
         "about": {
             "title": "Sobre mi...",
             "welcome": "!Hola!, soy Santiago Menendez y este es mi Portafolio",
-            "about_me": "Soy Python Developer y Data Engineer trabajando desde 2019.\nEstudio Ingenieria Informatica en la UNLaM.\nSoy autodidacta y me gusta aprender nuevas tecnologias."
+            "about_me": "Trabajo como Desarrollador Backend desde 2019.\nEstudio Ingenieria Informatica en la UNLaM.\nSoy autodidacta y me gusta aprender nuevas tecnologias."
         },
         "experience": {
             "title": "Experiencia laboral",
@@ -111,6 +114,9 @@
         },
         "footer": {
             "text": "Proyecto realizado con Vue.js"
+        },
+        "downloadCV": {
+            "title": "Descargar Curriculum"
         }
     }
 }
