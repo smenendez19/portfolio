@@ -9,8 +9,6 @@ import '@/assets/css/styles.css'
 
 const lang = localStorage.getItem('lang')
 
-console.log(lang)
-
 const i18n = createI18n({
   locale: (lang || 'en'),
   fallbackLocale: 'en',
