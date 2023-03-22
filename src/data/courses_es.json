@@ -1,10 +1,46 @@
 {
     "courses": [
         {
+            "course": "Python (Basic) Certificate",
+            "company": "HackerRank",
+            "since": "2020-08",
+            "url": "https://www.hackerrank.com/certificates/805cae20df36"
+        },
+        {
+            "course": "C Course",
+            "company": "Sololearn",
+            "since": "2019-01",
+            "url": "https://www.sololearn.com/Certificate/1089-12315601/pdf/"
+        },
+        {
+            "course": "Python 3 Tutorial",
+            "company": "Sololearn",
+            "since": "2019-01",
+            "url": "https://www.sololearn.com/Certificate/1073-12315601/pdf/"
+        },
+        {
+            "course": "SQL Course",
+            "company": "Sololearn",
+            "since": "2019-01",
+            "url": "https://www.sololearn.com/Certificate/1060-12315601/pdf/"
+        },
+        {
+            "course": "Curso de Marca Personal",
+            "company": "Platzi",
+            "since": "2018-11",
+            "url": "https://platzi.com/@SantiMenendez/curso/1220-marca-personal/diploma/detalle/"
+        },
+        {
+            "course": "Curso de Programacion Basica",
+            "company": "Platzi",
+            "since": "2018-11",
+            "url": "https://platzi.com/p/SantiMenendez/curso/1050-programacion-basica/diploma/detalle/"
+        },
+        {
             "course": "Professional Data Engineer",
             "company": "Google Cloud",
-            "since": "Agosto 2021",
-            "until": "Agosto 2024",
+            "since": "2021-08",
+            "until": "2024-08",
             "description": "Certificado de Data Cloud Engineer en Google Cloud",
             "url": "https://www.credential.net/6c88d297-1283-4132-b112-690ed7707579",
             "image_logo": null
@@ -12,7 +48,7 @@
         {
             "course": "Aprende lenguaje GO (GOLANG) desde 0",
             "company": "Udemy",
-            "since": "Mayo 2022",
+            "since": "2022-05",
             "description": "Curso de GOLANG desde cero en Udemy",
             "url": "https://www.udemy.com/certificate/UC-2576e1e2-d55e-4d78-9c1c-c17a0336dcd9/",
             "image_logo": null
@@ -20,7 +56,7 @@
         {
             "course": "The Complete Hands-On Introduction to Apache Airflow",
             "company": "Udemy",
-            "since": "Diciembre 2021",
+            "since": "2021-12",
             "description": "Curso de Airflow introductorio",
             "url": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-3099ee67-ad8f-4986-ad47-43ac92e52b89.pdf",
             "image_logo": null
@@ -28,7 +64,7 @@
         {
             "course": "AWS Essentials",
             "company": "Udemy",
-            "since": "Octubre 2021",
+            "since": "2021-10",
             "description": "Curso de AWS introductorio",
             "url": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-c98f07e3-d535-425a-9edc-141c8f79a3b9.pdf",
             "image_logo": null
@@ -36,18 +72,114 @@
         {
             "course": "Desarrollo Backend Node.js",
             "company": "IncluIT",
-            "since": "Septiembre 2021",
+            "since": "2021-09",
             "description": "Curso de NodeJS",
             "image_logo": null
         },
         {
             "course": "DBT Fundamentals",
             "company": "DBT Labs",
-            "since": "Mayo 2022",
-            "until": "Mayo 2024",
+            "since": "2022-05",
+            "until": "2024-05",
             "description": "Curso introductorio de DBT",
             "url": "https://www.credential.net/8143fa1e-e72a-4543-b676-45903f8d7567",
             "image_logo": null
+        },
+        {
+            "course": "Rest API (Intermediate)",
+            "company": "HackerRank",
+            "since": "2020-10",
+            "url": "https://www.hackerrank.com/certificates/e7638419c7bf"
+        },
+        {
+            "course": "Modernizing Data Lakes and Data Warehouses with GCP",
+            "company": "Coursera",
+            "since": "2021-01",
+            "url": "https://www.coursera.org/account/accomplishments/verify/H8CUJ7JAWAUU"
+        },
+        {
+            "course": "Google Cloud Platform Big Data and Machine Learning Fundamentals",
+            "company": "Coursera",
+            "since": "2021-01",
+            "url": "http://coursera.org/verify/JB8KW2DA2AXW"
+        },
+        {
+            "course": "Building Batch Data Pipelines on GCP",
+            "company": "Coursera",
+            "since": "2021-02",
+            "url": "https://www.coursera.org/account/accomplishments/verify/GFNXA668ALZK"
+        },
+        {
+            "course": "Smart Analytics, Machine Learning and AI on GCP",
+            "company": "Coursera",
+            "since": "2021-03",
+            "url": "https://www.coursera.org/account/accomplishments/verify/KYJNAS7XA5NH"
+        },
+        {
+            "course": "Building Resilient Streaming Analytics Systems on GCP",
+            "company": "Coursera",
+            "since": "2021-03",
+            "url": "https://www.coursera.org/account/accomplishments/verify/3PVWRUUUJXT9"
+        },
+        {
+            "course": "SQL (Intermediate) Certificate",
+            "company": "HackerRank",
+            "since": "2021-05",
+            "url": "https://www.hackerrank.com/certificates/517de459b1c8"
+        },
+        {
+            "course": "SQL (Basic) Certificate",
+            "company": "HackerRank",
+            "since": "2021-05",
+            "url": "https://www.hackerrank.com/certificates/27a14e7ca19f"
+        },
+        {
+            "course": "JavaScript (Basic) Certificate",
+            "company": "HackerRank",
+            "since": "2021-07",
+            "url": "https://www.hackerrank.com/certificates/3bfd1d69bbf0"
+        },
+        {
+            "course": "CodinGame Certification - Python 3",
+            "company": "CodinGame",
+            "since": "2022-04",
+            "url": "https://www.codingame.com/certification/hr4yTpYwkVNpIh0S38KwvQ"
+        },
+        {
+            "course": "Problem Solving (Basic) Certificate",
+            "company": "HackerRank",
+            "since": "2023-01",
+            "url": "https://www.hackerrank.com/certificates/3319b839bb55"
+        },
+        {
+            "course": "JavaScript (Intermediate)",
+            "company": "HackerRank",
+            "since": "2023-01",
+            "url": "https://www.hackerrank.com/certificates/f3443f937ec9"
+        },
+        {
+            "course": "Java Course",
+            "company": "Sololearn",
+            "since": "2023-01",
+            "url": "https://www.sololearn.com/certificates/CT-LAYXYO7O"
+        },
+        {
+            "course": "Golang Course",
+            "company": "Sololearn",
+            "since": "2023-02",
+            "url": "https://www.sololearn.com/certificates/CT-Z5IXUYPN"
+        },
+        {
+            "course": "Go (Basic) Certificate",
+            "company": "HackerRank",
+            "since": "2023-02",
+            "url": "https://www.hackerrank.com/certificates/ee95d2b5dc70"
+        },
+        {
+            "course": "Java (Basic) Certificate",
+            "company": "HackerRank",
+            "since": "2023-03",
+            "url": "https://www.hackerrank.com/certificates/ee9800f89614"
         }
     ]
 }

@@ -79,7 +79,51 @@
         justify="center"
         class="ma-auto"
       >
-        <v-table>
+        <v-data-table
+          v-model:items-per-page="datatable.itemsPerPage"
+          :headers="getDataTableHeaders"
+          :items="courses"
+          item-value="course"
+          dense
+          multi-sort
+          no-data-text="No data"
+        >
+          <template #item="{ item }">
+            <tr>
+              <td>
+                {{ item.props.title.course }}
+              </td>
+              <td>
+                {{ item.props.title.company }}
+              </td>
+              <td>
+                {{ item.props.title.since }}
+              </td>
+              <td>
+                {{ item.props.title.until }}
+              </td>
+              <td>
+                {{ item.props.title.description }}
+              </td>
+              <td
+                v-if="item.props.title.url"
+                class="text-center"
+              >
+                <a
+                  :href="item.props.title.url"
+                  target="_blank"
+                >Link</a>
+              </td>
+              <td
+                v-else
+                class="text-center"
+              >
+                <p>unavaiable</p>
+              </td>
+            </tr>
+          </template>
+        </v-data-table>
+        <!--<v-table>
           <thead>
             <tr>
               <th class="text-center">
@@ -139,7 +183,7 @@
               </td>
             </tr>
           </tbody>
-        </v-table>
+        </v-table>-->
       </v-row>
     </v-card>
   </v-container>
@@ -157,7 +201,52 @@ export default {
     education: null,
     courses: null,
     lang: "es",
+    datatable: {
+      itemsPerPage: 10
+    }
   }),
+  computed: {
+    getDataTableHeaders() {
+      return [
+        {
+          title: this.$t("courses.fields.course"),
+          align: "center",
+          sortable: true,
+          key: "course"
+        },
+        {
+          title: this.$t("courses.fields.company"),
+          align: "center",
+          sortable: true,
+          key: "company"
+        },
+        {
+          title: this.$t("courses.fields.start_date"),
+          align: "center",
+          sortable: true,
+          key: "since"
+        },
+        {
+          title: this.$t("courses.fields.end_date"),
+          align: "center",
+          sortable: true,
+          key: "until"
+        },
+        {
+          title: this.$t("courses.fields.description"),
+          align: "center",
+          sortable: true,
+          key: "description"
+        },
+        {
+          title: this.$t("courses.fields.certificate"),
+          align: "center",
+          sortable: true,
+          key: "url"
+        }
+      ]
+    }
+  },
   watch: {
     "$i18n.locale": function(newLang) {
       this.lang = newLang
