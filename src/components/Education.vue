@@ -81,6 +81,7 @@
       >
         <v-data-table
           v-model:items-per-page="datatable.itemsPerPage"
+          v-model:sort-by="datatable.sortBy"
           :headers="getDataTableHeaders"
           :items="courses"
           item-value="course"
@@ -91,26 +92,26 @@
           <template #item="{ item }">
             <tr>
               <td>
-                {{ item.props.title.course }}
+                {{ item.columns.course }}
               </td>
               <td>
-                {{ item.props.title.company }}
+                {{ item.columns.company }}
               </td>
               <td>
-                {{ item.props.title.since }}
+                {{ item.columns.since }}
               </td>
               <td>
-                {{ item.props.title.until }}
+                {{ item.columns.until }}
               </td>
               <td>
-                {{ item.props.title.description }}
+                {{ item.columns.description }}
               </td>
               <td
-                v-if="item.props.title.url"
+                v-if="item.columns.url"
                 class="text-center"
               >
                 <a
-                  :href="item.props.title.url"
+                  :href="item.columns.url"
                   target="_blank"
                 >Link</a>
               </td>
@@ -123,67 +124,6 @@
             </tr>
           </template>
         </v-data-table>
-        <!--<v-table>
-          <thead>
-            <tr>
-              <th class="text-center">
-                {{ $t("courses.fields.course") }}
-              </th>
-              <th class="text-center">
-                {{ $t("courses.fields.company") }}
-              </th>
-              <th class="text-center">
-                {{ $t("courses.fields.start_date") }}
-              </th>
-              <th class="text-center">
-                {{ $t("courses.fields.end_date") }}
-              </th>
-              <th class="text-center">
-                {{ $t("courses.fields.description") }}
-              </th>
-              <th class="text-center">
-                {{ $t("courses.fields.certificate") }}
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr
-              v-for="course in courses"
-              :key="course"
-            >
-              <td class="text-center">
-                {{ course.course }}
-              </td>
-              <td class="text-center">
-                {{ course.company }}
-              </td>
-              <td class="text-center">
-                {{ course.since }}
-              </td>
-              <td class="text-center">
-                {{ course.until }}
-              </td>
-              <td class="text-center">
-                {{ course.description }}
-              </td>
-              <td
-                v-if="course.url"
-                class="text-center"
-              >
-                <a
-                  :href="course.url"
-                  target="_blank"
-                >Link</a>
-              </td>
-              <td
-                v-else
-                class="text-center"
-              >
-                <p>unavaiable</p>
-              </td>
-            </tr>
-          </tbody>
-        </v-table>-->
       </v-row>
     </v-card>
   </v-container>
@@ -202,7 +142,8 @@ export default {
     courses: null,
     lang: "es",
     datatable: {
-      itemsPerPage: 10
+      itemsPerPage: 10,
+      sortBy: [{ key: 'since', order: 'desc' }],
     }
   }),
   computed: {
