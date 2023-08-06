@@ -16,7 +16,7 @@
     <v-col class="text-center">
       <v-btn
         variant="plain"
-        href="/files/cv_es.pdf"
+        href="files/cv_es.pdf"
         icon
         download
       >
@@ -30,7 +30,7 @@
     <v-col class="text-center">
       <v-btn
         variant="plain"
-        href="/files/cv_en.pdf"
+        href="files/cv_en.pdf"
         icon
         download
       >

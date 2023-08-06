@@ -4,6 +4,7 @@
 
 - Actualizacion de librerias
 - Correccion de errores en Data Tables de Vuetify
+- Correccion en la descarga de curriculums
 
 ## 1.2.0
 
