@@ -14,7 +14,7 @@
         class=""
       >
         <v-btn href="/portfolio/">
-          <h3>Santiago Menendez</h3>
+          <h3>Portfolio</h3>
         </v-btn>
       </v-col>
     </v-row>
@@ -26,7 +26,7 @@
       show-arrows
       hide-slider
     >
-      <v-tab @click="goToComponent('about')">
+      <v-tab @click="goToComponent('main')">
         {{ $t("menu.about") }}
       </v-tab>
       <v-tab @click="goToComponent('experience')">
@@ -35,14 +35,14 @@
       <v-tab @click="goToComponent('education')">
         {{ $t("menu.education") }}
       </v-tab>
+      <v-tab @click="goToComponent('courses')">
+        {{ $t("menu.courses") }}
+      </v-tab>
       <v-tab @click="goToComponent('skills')">
         {{ $t("menu.skills") }}
       </v-tab>
       <v-tab @click="goToComponent('projects')">
         {{ $t("menu.projects") }}
-      </v-tab>
-      <v-tab @click="goToComponent('contact')">
-        {{ $t("menu.contact") }}
       </v-tab>
       <v-tab @click="goToComponent('download')">
         {{ $t("menu.download") }}
@@ -150,6 +150,7 @@ export default {
       "about",
       "experience",
       "education",
+      "courses",
       "skills",
       "projects",
       "contact",
@@ -162,6 +163,7 @@ export default {
         this.$t("menu.about"),
         this.$t("menu.experience"),
         this.$t("menu.education"),
+        this.$t("menu.courses"),
         this.$t("menu.skills"),
         this.$t("menu.projects"),
         this.$t("menu.contact"),

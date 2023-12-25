@@ -1,0 +1,28 @@
+name: Deploy to gh-pages
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+      - name: Install and build
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - run: |
+            npm install
+            npm run build
+      - name: Commit and push to gh-pages
+        uses: fregante/setup-git-user@v2
+      - run: |
+            git add dist -f && git commit -m "Upload to gh-pages"
+            git push origin `git subtree split --prefix dist main`:gh-pages --force

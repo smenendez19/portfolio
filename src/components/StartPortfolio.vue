@@ -4,6 +4,15 @@
     <v-main id="main">
       <v-container>
         <v-lazy
+          id="main"
+          :options="{ threshold: 1.0 }"
+          transition="fade-in-transition"
+        >
+          <div>
+            <AvatarLinksComponent />
+          </div>
+        </v-lazy>
+        <v-lazy
           id="about"
           :options="{ threshold: 1.0 }"
           transition="fade-in-transition"
@@ -34,6 +43,15 @@
         </v-lazy>
         <v-divider />
         <v-lazy
+          id="courses"
+          :options="{ threshold: 1.0 }"
+          transition="slide-x-transition"
+        >
+          <div>
+            <CoursesComponent />
+          </div>
+        </v-lazy>
+        <v-lazy
           id="skills"
           :options="{ threshold: 1.0 }"
           transition="slide-x-transition"
@@ -50,16 +68,6 @@
         >
           <div>
             <ProjectsComponent />
-          </div>
-        </v-lazy>
-        <v-divider />
-        <v-lazy
-          id="contact"
-          :options="{ threshold: 1.0 }"
-          transition="fade-in-transition"
-        >
-          <div>
-            <ContactLinksComponent />
           </div>
         </v-lazy>
         <v-divider />
@@ -82,25 +90,27 @@
 import MenuNavComponent from '@/components/layouts/MenuNav.vue'
 import FooterComponent from '@/components/layouts/Footer.vue'
 import AboutComponent from '@/components/About.vue'
-import ContactLinksComponent from '@/components/ContactLinks.vue'
 import EducationComponent from '@/components/Education.vue'
 import ExperienceComponent from '@/components/Experience.vue'
 import SkillsComponent from '@/components/Skills.vue'
 import ProjectsComponent from '@/components/Projects.vue'
 import DownloadCVComponent from '@/components/DownloadCV.vue'
+import AvatarLinksComponent from '@/components/AvatarLinks.vue'
+import CoursesComponent from '@/components/Courses.vue'
 
 export default {
   name: 'PortfolioComponent',
   components: {
+    AvatarLinksComponent,
     MenuNavComponent,
     FooterComponent,
     AboutComponent,
-    ContactLinksComponent,
     EducationComponent,
     ExperienceComponent,
     SkillsComponent,
     ProjectsComponent,
-    DownloadCVComponent
+    DownloadCVComponent,
+    CoursesComponent
   },
   data: () => ({
   }),

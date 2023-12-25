@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.3.0
+
+- Actualizacion de librerias.
+- Correccion de traducciones al ingles.
+- Cambios en los componentes de About, Contact, MenuNav, Experience, Education y Cursos.
+- Agregado de experiencia, cursos y nuevas habilidades adquiridas.
+
 ## 1.2.1
 
 - Actualizacion de librerias

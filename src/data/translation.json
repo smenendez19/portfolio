@@ -4,18 +4,18 @@
             "about": "About Me",
             "experience": "Experience",
             "education": "Education",
+            "courses": "Courses",
             "skills": "Skills",
             "projects": "Projects",
             "contact": "Contact",
             "download": "Download"
         },
         "about": {
-            "title": "About me...",
-            "welcome": "!Welcome!, Im Santiago Menendez and this is my Portfolio",
-            "about_me": "Im Backend Developer\nStuding Computer Engineer in UNLaM\nIm like learning new technologies and im self taught."
+            "title": "About",
+            "about_me": "Working as Backend Developer in Uala since february 2023.\nWorked as a Tutor for courses in Coderhouse and Data Platform Engineer in different companies.\nCurrently studying Computer Engineering in the Universidad Nacional of La Matanza since beginning of 2016.\nIm self-taught, responsible and open-changed. I learned technologies and programming languages related to Data, Frontend and Backend."
         },
         "experience": {
-            "title": "Job experience",
+            "title": "Experience",
             "since": "Since",
             "until": "Until",
             "projects": "Projects"
@@ -26,7 +26,7 @@
             "until": "Until"
         },
         "courses": {
-            "title": "Courses",
+            "title": "Courses & Certificates",
             "fields": {
                 "course": "Course",
                 "company": "Company",
@@ -64,18 +64,18 @@
             "about": "Sobre Mi",
             "experience": "Experiencia",
             "education": "Educación",
+            "courses": "Cursos",
             "skills": "Habilidades",
             "projects": "Proyectos",
             "contact": "Contacto",
             "download": "Descarga"
         },
         "about": {
-            "title": "Sobre mi...",
-            "welcome": "!Hola!, soy Santiago Menendez y este es mi Portafolio",
-            "about_me": "Trabajo como Desarrollador Backend desde 2019.\nEstudio Ingenieria Informatica en la UNLaM.\nSoy autodidacta y me gusta aprender nuevas tecnologias."
+            "title": "Sobre mi",
+            "about_me": "Actualmente trabajo como Desarrollador Backend en Ualá desde febrero de 2023.\nTrabaje como Data Platform Engineer en Ualá y Ergo Renova, y como Tutor en CoderHouse\nEstudiante de Ingeniería Informática en la Universidad Nacional de La Matanza desde 2016.\nSoy una persona autodidacta, responsable, capaz de organizarme en las tareas, poder trabajar en equipo y adaptable a los cambios que surjan durante los proyectos.\nHe trabajado con diversas tecnologías y lenguajes de programación relacionados a Data, Backend y Frontend."
         },
         "experience": {
-            "title": "Experiencia laboral",
+            "title": "Experiencia",
             "since": "Desde",
             "until": "Hasta",
             "projects": "Proyectos"
