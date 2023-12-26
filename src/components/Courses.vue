@@ -38,8 +38,8 @@
 </template>
   
 <script>
-import coursesDataES from "@/data/courses_es.json";
-import coursesDataEN from "@/data/courses_en.json";
+import coursesDataES from "@/data/courses_es.json"
+import coursesDataEN from "@/data/courses_en.json"
   
 export default {
   name: "CoursesComponent",
@@ -107,9 +107,9 @@ export default {
   methods: {
     async getDataJSON() {
       if (this.lang === "es") {
-        this.courses = coursesDataES.courses;
+        this.courses = coursesDataES.courses
       } else {
-        this.courses = coursesDataEN.courses;
+        this.courses = coursesDataEN.courses
       }
     },
   },

@@ -31,20 +31,20 @@
             "icon": null
         },
         {
-            "name": "Vue",
-            "icon": "vue"
+            "name": "Spring Boot",
+            "icon": null
         },
         {
-            "name": "CSS",
-            "icon": "css"
+            "name": "Vue",
+            "icon": "vue"
         },
         {
             "name": "HTML",
             "icon": "html"
         },
         {
-            "name": "RESTful API",
-            "icon": null
+            "name": "CSS",
+            "icon": "css"
         }
     ],
     "databases": [
@@ -66,6 +66,10 @@
         },
         {
             "name": "RedShift",
+            "icon": "database"
+        },
+        {
+            "name": "DynamoDB",
             "icon": "database"
         }
     ],
@@ -99,7 +103,7 @@
             "icon": "office"
         },
         {
-            "name": "Machine Learning",
+            "name": "Terraform",
             "icon": null
         },
         {
@@ -107,7 +111,7 @@
             "icon": null
         },
         {
-            "name": "Terraform",
+            "name": "MacOS",
             "icon": null
         },
         {

@@ -4,12 +4,6 @@
 
 <script>
 export default {
-  name: 'App',
-  components: {
-  },
-  data: () => ({
-  }),
-  methods: {
-  },
+  name: 'App'
 }
 </script>

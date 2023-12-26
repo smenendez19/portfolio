@@ -2,10 +2,8 @@
   <v-container fill-height>
     <v-card
       class="pa-5 rounded-xl"
-      color="principal"
     >
       <v-row
-        justify="center"
         class="ma-auto"
       >
         <v-col>
@@ -19,33 +17,38 @@
       <div
         v-for="edu in education"
         :key="edu"
+        class="my-5"
       >
-        <v-row
-          justify="center"
-          align="center"
-          class="ma-auto"
-        >
-          <v-col>
+        <v-row>
+          <v-col
+            cols="3"
+            align="center"
+          >
             <div v-if="edu.image_logo">
               <v-img
                 contain
-                class="rounded-lg mx-auto"
-                width="200px"
-                height="200px"
+                class="rounded-lg"
+                width="150px"
+                height="150px"
                 :src="'assets/images/' + edu.image_logo"
               />
             </div>
+          </v-col>
+          <v-divider
+            vertical
+            class="mx-5"
+          />
+          <v-col>
             <v-card-text>
-              <div class="text-center">
-                <h3>{{ edu.university }}</h3>
-              </div>
+              <h3 class="text-center my-1">
+                {{ edu.university }}
+              </h3>
               <p class="text-center my-1">
                 {{ edu.degree }}
               </p>
-              <p class="text-center">
-                {{ $t("education.since") }}
+              <p class="text-center my-1">
                 <strong>{{ edu.since }}</strong>
-                {{ $t("education.until") }}
+                <strong> - </strong>
                 <strong>{{ edu.until }}</strong>
               </p>
               <v-divider class="my-5" />

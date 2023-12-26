@@ -24,15 +24,7 @@
 
 <script>
 export default {
-  name: "AboutComponent",
-  setup() {
-  },
-  data: () => ({
-  }),
-  async created() {
-  },
-  methods: {
-  },
+  name: "AboutComponent"
 }
 </script>
 

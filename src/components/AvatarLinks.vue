@@ -2,7 +2,6 @@
   <v-container fill-height>
     <v-row
       justify="center"
-      align="center"
     >
       <v-card
         elevation="20"
@@ -34,26 +33,34 @@
                 :key="contact"
                 class="mx-1"
               >
-                <v-icon :icon="getIcon(contact.type)" />
+                <v-tooltip
+                  :text="$t(contact.text)"
+                  location="bottom"
+                >
+                  <template #activator="{ props }">
+                    <v-btn
+                      v-bind="props"
+                      variant="plain"
+                      :icon="getIcon(contact.type)"
+                      :href="contact.url"
+                      target="_blank"
+                    />
+                  </template>
+                </v-tooltip>
               </div>
-            </v-row>
-            <v-row
-              justify="center"
-            >
-              <v-tooltip :text="$t(cv.download_text)">
+              <v-tooltip
+                :text="$t(cv.download_text)"
+                location="bottom"
+              >
                 <template #activator="{ props }">
                   <v-btn
                     v-bind="props"
                     variant="plain"
                     :href="$t(cv.url)"
-                    icon
+                    :icon="icons.mdiDownload"
                     download
-                  >
-                    <v-icon
-                      size="40px"
-                      :icon="icons.mdiDownload"
-                    />
-                  </v-btn>
+                    class="mx-1"
+                  />
                 </template>
               </v-tooltip>
             </v-row>
@@ -74,11 +81,17 @@ import avatarImage from "/assets/images/avatar_image.png"
 export default {
   name: "AvatarLinksComponent",
   setup() {
-    function getIcon(type) {
-      if (type === "github") return mdiGithub
-      else if (type === "linkedin") return mdiLinkedin
-      else if (type === "email") return mdiEmail
-      return mdiCircleOffOutline
+    const getIcon = (type) => {
+      switch (type) {
+        case "github":
+          return mdiGithub
+        case "linkedin":
+          return mdiLinkedin
+        case "email":
+          return mdiEmail
+        default:
+          return mdiCircleOffOutline
+      }
     }
     return {
       getIcon

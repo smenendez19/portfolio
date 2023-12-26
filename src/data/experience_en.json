@@ -6,13 +6,7 @@
             "position": "Backend Developer",
             "since": "February 2023",
             "until": "Present",
-            "description": "Im working as Backend Developer to Ualá since February 2023",
-            "projects": [
-                {
-                    "name": "Platform",
-                    "description": "Im working in the Platform team, using Python, Docker, AWS, Java, Golang and Terraform to build and mantain the services and APIs of the App"
-                }
-            ]
+            "description": "Part of Platform team, Backend Developer contributing to development of solutions for projects within AWS platform. Use technologies like Java, Go, and Python, implementation of services like DynamoDB, Lambdas, API Gateway, Terraform, and GitHub Actions. Worked within microservices architecture framework, optimizing efficiency and scalability of systems."
         },
         {
             "company": "Ualá",
@@ -20,17 +14,7 @@
             "position": "Data Platform Engineer",
             "since": "September 2021",
             "until": "February 2023",
-            "description" : "Im worked in Ualá as Data Engineer since september 2019, first in the Datalake AWS project and later in the Data Platform GCP",
-            "projects": [
-                {
-                    "name": "Datalake AWS",
-                    "description": "Datalake cloud in AWS"
-                },
-                {
-                    "name": "Data Platform Uala",
-                    "description": "Data Platform in GCP, using Python, Docker, Kubernetes and Javascript"
-                }
-            ]
+            "description" : "Entered the Data Platform team at the company, involved in data migration, application development to facilitate pipeline assembly, and incident resolution. Applied methodologies and work methods, researching tools and technologies for the rest of the data area.Contributed to the creation of the data platform for internal users using Python and FastAPI for the backend, VueJS for the frontend, and technologies such as Docker, GCP, PostgreSQL, BigQuery, and Airflow"
         },
         {
             "company": "CoderHouse",
@@ -38,13 +22,7 @@
             "position": "Tutor",
             "since": "March 2022",
             "until": "July 2022",
-            "description": "Worked freelance as Tutor in CoderHouse for the Python and Django Courses",
-            "projects": [
-                {
-                    "name": "Python introductory Course",
-                    "description": "I worked as tutor for the Python introductory course in CoderHouse, teaching the fundamentals of Python and Django"
-                }
-            ]
+            "description": "Worked as tutor for Coderhouse supporting courses in Python and Django."
         },
         {
             "company": "Ergo Renova",
@@ -52,21 +30,7 @@
             "position": "Data Engineer",
             "since": "January 2019",
             "until": "September 2021",
-            "description" : "Im started working in Ergo Renova in january 2019 as Trainee and later as Data Engineer for the clients and proyects in the company",
-            "projects": [
-                {
-                    "name": "Telefonica",
-                    "description": "Big Data project for Telefonica/Movistar in Hadoop, using Bash, GitLab, Python, Spark"
-                },
-                {
-                    "name": "TeleCom",
-                    "description": "Big Data project cloud for TeleCom with GCP using Python, GitHub, Kafka"
-                },
-                {
-                    "name": "GIRE",
-                    "description": "Big Data project for social media using Oracle, Python, API Rest, SKLearn"
-                }
-            ]
+            "description" : "Worked as Data Enginner for Ergo Renova in the projects of Movistar, GIRE and Telecom Argentina.\nI worked building ETLs, developing APIs, processing data, ingestion of data and data mining."
         }
     ]
 }

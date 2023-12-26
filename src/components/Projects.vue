@@ -2,7 +2,6 @@
   <v-container>
     <v-card
       class="pa-5 rounded-xl"
-      color="principal"
     >
       <v-row
         justify="center"
@@ -61,8 +60,8 @@
 
 <script>
 import projectsDataES from "@/data/projects_es.json"
-import projectsDataEN from "@/data/projects_en.json";
-import { mdiOpenInNew } from '@mdi/js';
+import projectsDataEN from "@/data/projects_en.json"
+import { mdiOpenInNew } from '@mdi/js'
 
 export default {
   name: "ProjectsComponent",
@@ -90,9 +89,9 @@ export default {
   methods: {
     async getDataJSON() {
       if (this.lang === "es")
-        this.projects = projectsDataES.projects;
+        this.projects = projectsDataES.projects
       else
-        this.projects = projectsDataEN.projects;
+        this.projects = projectsDataEN.projects
     },
   },
 }

@@ -2,7 +2,6 @@
   <v-container>
     <v-card
       class="pa-5 rounded-xl"
-      color="principal"
     >
       <v-row
         justify="center"
@@ -118,24 +117,43 @@ import { mdiLanguagePython, mdiCircleOffOutline, mdiLanguageJavascript, mdiLangu
 export default {
   name: "SkillsComponent",
   setup() {
-    function getIcon(type) {
-      if (type === "github") return mdiGithub
-      else if (type === "python") return mdiLanguagePython
-      else if (type === "javascript") return mdiLanguageJavascript
-      else if (type === "go") return mdiLanguageGo
-      else if (type === "java") return mdiLanguageJava
-      else if (type === "console") return mdiConsole
-      else if (type === "vue") return mdiVuejs
-      else if (type === "css") return mdiLanguageCss3
-      else if (type === "html") return mdiLanguageHtml5
-      else if (type === "database") return mdiDatabaseSearch
-      else if (type === "gcp") return mdiGoogleCloud
-      else if (type === "aws") return mdiAws
-      else if (type === "docker") return mdiDocker
-      else if (type === "kubernetes") return mdiKubernetes
-      else if (type === "git") return mdiGit
-      else if (type === "office") return mdiMicrosoftOffice
-      return mdiCircleOffOutline
+    const getIcon = (type) => {
+      switch (type) {
+        case "github":
+          return mdiGithub
+        case "python":
+          return mdiLanguagePython
+        case "javascript":
+          return mdiLanguageJavascript
+        case "go":
+          return mdiLanguageGo
+        case "java":
+          return mdiLanguageJava
+        case "console":
+          return mdiConsole
+        case "vue":
+          return mdiVuejs
+        case "css":
+          return mdiLanguageCss3
+        case "html":
+          return mdiLanguageHtml5
+        case "database":
+          return mdiDatabaseSearch
+        case "gcp":
+          return mdiGoogleCloud
+        case "aws":
+          return mdiAws
+        case "docker":
+          return mdiDocker
+        case "kubernetes":
+          return mdiKubernetes
+        case "git":
+          return mdiGit
+        case "office":
+          return mdiMicrosoftOffice
+        default:
+          return mdiCircleOffOutline
+      }
     }
     return {
       getIcon
@@ -148,11 +166,11 @@ export default {
   async created() {
     const lang = localStorage.getItem('lang')
     if (lang) this.lang = lang
-    this.getDataJSON();
+    this.getDataJSON()
   },
   methods: {
     async getDataJSON() {
-      this.skills = skillsData;
+      this.skills = skillsData
     },
   },
 }

@@ -5,14 +5,8 @@
             "image_logo": "uala-logo.png",
             "position": "Backend Developer",
             "since": "Febrero 2023",
-            "until": "Actualidad",
-            "description": "Trabajo en Uala como Backend Developer desde febrero de 2023",
-            "projects": [
-                {
-                    "name": "Plataforma",
-                    "description": "Trabajo para el equipo de plataforma de Uala manteniendo y desarrollando los servicios de la aplicacion usando Java, Python, Golang y Terraform en AWS"
-                }
-            ]
+            "until": "Presente",
+            "description": "Formo parte del equipo de Platform como Desarrollador Backend, contribuyendo al desarrollo de soluciones para proyectos dentro en la plataforma de AWS. Utilizo tecnologías como Java, Go y Python, así como la implementación de servicios como DynamoDB, Lambdas, API Gateway, Terraform y Github Actions. He trabajado dentro del marco de arquitectura de microservicios que optimiza la eficiencia y la escalabilidad de los sistemas."
         },
         {
             "company": "Ualá",
@@ -20,17 +14,7 @@
             "position": "Data Platform Engineer",
             "since": "Septiembre 2021",
             "until": "Febrero 2023",
-            "description": "Trabaje en Uala como Data Engineer desde septiembre de 2019, primero en el proyecto de Datalake AWS y actualmente en el proyecto de Plataforma de Datos de Uala.",
-            "projects": [
-                {
-                    "name": "Datalake AWS",
-                    "description": "Datalake cloud en AWS"
-                },
-                {
-                    "name": "Plataforma de Datos de Uala",
-                    "description": "Plataforma de Datos alojada en GCP, utilizando GCP, Python, Docker, Kubernetes y Javascript"
-                }
-            ]
+            "description": "Proyecto de Plataforma de Datos en Google Cloud donde participo de la migración de datos, armado de aplicaciones para facilitar el armado de pipelines y solución de incidencias, aplicación de metodologías y formas de trabajo con investigación de herramientas y tecnologías para el resto del area de Datos.\nContribuí a la creación de la plataforma de datos para usuarios internos utilizando Python y FastAPI para el backend, VueJS para el frontend, y tecnologías como Docker, GCP, PostgreSQL, BigQuery y Airflow.\nDesde que ingrese al equipo se lograron que las soluciones y pipelines de datos sean un 50 % más rápidas que antes, y se implementó un método eficiente de trabajo con GitHub, Agile y software interno creado para mejor facilidad."
         },
         {
             "company": "CoderHouse",
@@ -38,13 +22,7 @@
             "position": "Tutor",
             "since": "Marzo 2022",
             "until": "Julio 2022",
-            "description": "Trabaje de manera freelance como Tutor en CoderHouse para cursos de la plataforma\n",
-            "projects": [
-                {
-                    "name": "Curso Introductorio de Python",
-                    "description": "Fui tutor para los cursos introductorios de Python dados por la plataforma CoderHouse donde se enseñan los conceptos fundamentales de Python y Django como framework para backend web"
-                }
-            ]
+            "description": "Trabaje en Coderhouse como tutor para los cursos de Python y Django de la empresa."
         },
         {
             "company": "Ergo Renova",
@@ -52,21 +30,7 @@
             "position": "Data Engineer",
             "since": "Enero 2019",
             "until": "Septiembre 2021",
-            "description": "Comenze en Ergo Renova en enero de 2019 como Trainee y luego como Data Engineer para los proyectos con diferentes clientes de la empresa",
-            "projects": [
-                {
-                    "name": "Telefonica",
-                    "description": "Proyecto de Big Data para Telefonica/Movistar en Hadoop, utilizando Bash, GitLab, Python, Spark"
-                },
-                {
-                    "name": "TeleCom",
-                    "description": "Proyecto de Big Data cloud para TeleCom con GCP utilizando Python, GitHub, Kafka"
-                },
-                {
-                    "name": "GIRE",
-                    "description": "Proyecto de datos de redes sociales utilizando Oracle, Python, API Rest, SKLearn"
-                }
-            ]
+            "description": "Me desempeñe como Data Engineer en proyectos de Data para Movistar, GIRE y Telecom Argentina realizando tareas de desarrollo de pipelines, APIs, ingestas, procesamiento y mineria de datos."
         }
     ]
 }
