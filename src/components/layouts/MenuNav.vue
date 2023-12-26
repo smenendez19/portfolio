@@ -149,8 +149,7 @@ export default {
       "education",
       "courses",
       "skills",
-      "projects",
-      "contact"
+      "projects"    
     ]
   }),
   computed: {
@@ -161,8 +160,7 @@ export default {
         this.$t("menu.education"),
         this.$t("menu.courses"),
         this.$t("menu.skills"),
-        this.$t("menu.projects"),
-        this.$t("menu.contact")
+        this.$t("menu.projects")
       ]
     }
   },
