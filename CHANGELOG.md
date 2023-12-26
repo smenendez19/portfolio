@@ -4,7 +4,9 @@
 
 - Actualizacion de librerias.
 - Correccion de traducciones al ingles.
-- Cambios en los componentes de About, Contact, MenuNav, Experience, Education y Cursos.
+- Cambios en los componentes de About, MenuNav, Experience, Education.
+- Eliminacion de componente ContactLinks y DownloadCV, se suman a AvatarLinks.
+- Agregado de componente Courses.
 - Agregado de experiencia, cursos y nuevas habilidades adquiridas.
 
 ## 1.2.1

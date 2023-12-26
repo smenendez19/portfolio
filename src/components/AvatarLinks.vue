@@ -37,6 +37,26 @@
                 <v-icon :icon="getIcon(contact.type)" />
               </div>
             </v-row>
+            <v-row
+              justify="center"
+            >
+              <v-tooltip :text="$t(cv.download_text)">
+                <template #activator="{ props }">
+                  <v-btn
+                    v-bind="props"
+                    variant="plain"
+                    :href="$t(cv.url)"
+                    icon
+                    download
+                  >
+                    <v-icon
+                      size="40px"
+                      :icon="icons.mdiDownload"
+                    />
+                  </v-btn>
+                </template>
+              </v-tooltip>
+            </v-row>
           </v-col>
         </v-row>
       </v-card>
@@ -45,8 +65,10 @@
 </template>
 
 <script>
-import { mdiGithub, mdiCircleOffOutline, mdiLinkedin, mdiEmail } from '@mdi/js';
-import contactData from "@/data/contacts.json";
+import { mdiGithub, mdiCircleOffOutline, mdiLinkedin, mdiEmail, mdiDownload } from '@mdi/js'
+import contactData from "@/data/contacts.json"
+import cvDataEs from "@/data/cv_es.json"
+import cvDataEn from "@/data/cv_en.json"
 import avatarImage from "/assets/images/avatar_image.png"
 
 export default {
@@ -67,11 +89,19 @@ export default {
       avatarImage
     },
     contacts : null,
+    cv: null,
     lang : "es",
     icons: {
-      mdiGithub
+      mdiGithub,
+      mdiDownload
     }
   }),
+  watch: {
+    "$i18n.locale": function (newLang) {
+      this.lang = newLang
+      this.getDataJSON()
+    }
+  },
   async created() {
     const lang = localStorage.getItem('lang')
     if (lang) this.lang = lang
@@ -80,6 +110,8 @@ export default {
   methods: {
     async getDataJSON() {
       this.contacts = contactData.contacts
+      if (this.lang === "es") this.cv = cvDataEs.cv
+      else this.cv = cvDataEn.cv
     },
   },
 }

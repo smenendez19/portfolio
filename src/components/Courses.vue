@@ -101,10 +101,8 @@ export default {
   },
   async created() {
     const lang = localStorage.getItem('lang')
-    if (lang) {
-      this.lang = lang
-    }
-    this.getDataJSON();
+    if (lang) this.lang = lang
+    this.getDataJSON()
   },
   methods: {
     async getDataJSON() {
@@ -117,5 +115,6 @@ export default {
   },
 }
 </script>
-  
-  <style scoped></style>
+
+<style scoped>
+</style>

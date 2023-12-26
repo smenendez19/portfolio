@@ -44,9 +44,6 @@
       <v-tab @click="goToComponent('projects')">
         {{ $t("menu.projects") }}
       </v-tab>
-      <v-tab @click="goToComponent('download')">
-        {{ $t("menu.download") }}
-      </v-tab>
     </v-tabs>
     <v-spacer />
     <v-btn
@@ -153,8 +150,7 @@ export default {
       "courses",
       "skills",
       "projects",
-      "contact",
-      "download"
+      "contact"
     ]
   }),
   computed: {
@@ -166,8 +162,7 @@ export default {
         this.$t("menu.courses"),
         this.$t("menu.skills"),
         this.$t("menu.projects"),
-        this.$t("menu.contact"),
-        this.$t("menu.download"),
+        this.$t("menu.contact")
       ]
     }
   },

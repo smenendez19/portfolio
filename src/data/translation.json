@@ -1,14 +1,12 @@
 {
     "en": {
         "menu": {
-            "about": "About Me",
+            "about": "About",
             "experience": "Experience",
             "education": "Education",
             "courses": "Courses",
             "skills": "Skills",
-            "projects": "Projects",
-            "contact": "Contact",
-            "download": "Download"
+            "projects": "Projects"
         },
         "about": {
             "title": "About",
@@ -47,16 +45,13 @@
         },
         "projects": {
             "title": "Projects",
-            "url_title": "Access to the repository"
+            "url_title": "Repository URL"
         },
         "contact": {
             "title": "Contact"
         },
         "footer": {
             "text": "Project developed with Vue.js"
-        },
-        "downloadCV": {
-            "title": "Download Resume"
         }
     },
     "es": {
@@ -66,9 +61,7 @@
             "education": "Educación",
             "courses": "Cursos",
             "skills": "Habilidades",
-            "projects": "Proyectos",
-            "contact": "Contacto",
-            "download": "Descarga"
+            "projects": "Proyectos"
         },
         "about": {
             "title": "Sobre mi",
@@ -107,16 +100,13 @@
         },
         "projects": {
             "title": "Proyectos",
-            "url_title": "Acceso al repositorio"
+            "url_title": "URL del repositorio"
         },
         "contact": {
             "title": "Contacto"
         },
         "footer": {
             "text": "Proyecto realizado con Vue.js"
-        },
-        "downloadCV": {
-            "title": "Descargar Curriculum"
         }
     }
 }
