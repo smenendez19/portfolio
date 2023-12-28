@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.3.1
+
+- Agregado de librerias de compresion.
+- Modificacion de logos de empresas y universidades.
+- Modificacion del componente Projects.
+- Modificaciones visuales en los componentes.
+- Correccion de traducciones.
+
 ## 1.3.0
 
 - Actualizacion de librerias.
@@ -11,9 +19,9 @@
 
 ## 1.2.1
 
-- Actualizacion de librerias
-- Correccion de errores en Data Tables de Vuetify
-- Correccion en la descarga de curriculums
+- Actualizacion de librerias.
+- Correccion de errores en Data Tables de Vuetify.
+- Correccion en la descarga de curriculums.
 
 ## 1.2.0
 

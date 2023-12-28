@@ -1,25 +1,25 @@
 {
     "projects": [
         {
-            "name": "To Do List",
+            "name": "To Do List web app",
             "url_github": "https://github.com/SantiMenendez19/to_do_list_web",
             "description": "To Do list web app in Django using HTML5, Bootstrap, CSS, Python and SQLite/MongoDB as databases",
             "image" : "projects/to_do_list.png"
         },
         {
-            "name" : "Scrapper MeLi",
+            "name" : "Scraper MeLi",
             "url_github" : "https://github.com/SantiMenendez19/scraper_web_ml",
             "description" : "Scraper of products for Mercado Libre, using Python and BeatifulSoup. Includes a GUI for searching products and analize the results.",
             "image" : "projects/scraper_ml.png"
         },
         {
-            "name" : "Bot Hangman Discord",
+            "name" : "Hangman game discord bot",
             "url_github" : "https://github.com/SantiMenendez19/ahorcado_bot_discord",
             "description" : "Bot client of Hangman game for Discord programmed in Python",
             "image" : "projects/ahorcado_discord.png"
         },
         {
-            "name" : "Snake Game",
+            "name" : "Snake game",
             "url_github" : "https://github.com/SantiMenendez19/snake_game",
             "description": "A snake game programmed in Python",
             "image" : "projects/snake_game.png"

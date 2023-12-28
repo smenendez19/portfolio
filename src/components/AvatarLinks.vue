@@ -17,6 +17,7 @@
                   class="rounded-circle mx-auto"
                   :src="images.avatarImage"
                   width="150px"
+                  alt=""
                 />
               </v-col>
             </v-row>
@@ -39,10 +40,12 @@
                 >
                   <template #activator="{ props }">
                     <v-btn
+                      :id="contact.type"
                       v-bind="props"
                       variant="plain"
                       :icon="getIcon(contact.type)"
                       :href="contact.url"
+                      aria-label=""
                       target="_blank"
                     />
                   </template>
@@ -54,10 +57,12 @@
               >
                 <template #activator="{ props }">
                   <v-btn
+                    id="download-cv"
                     v-bind="props"
                     variant="plain"
                     :href="$t(cv.url)"
                     :icon="icons.mdiDownload"
+                    aria-label=""
                     download
                     class="mx-1"
                   />

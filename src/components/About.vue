@@ -1,15 +1,20 @@
 <template>
   <v-container fill-height>
-    <v-row>
+    <v-row class="ma-auto">
+      <v-col>
+        <h3 class="text-start">
+          {{ $t("about.title") }}
+        </h3>
+      </v-col>
+    </v-row>
+    <v-row justify="center">
       <v-card
-        class="ma-1 rounded-xl"
+        class="pa-5 rounded-xl"
+        width="90%"
+        height="100%"
       >
-        <v-row
-          justify="center"
-          class="mx-5 my-5"
-        >
+        <v-row class="my-5">
           <v-col>
-            <h3>{{ $t("about.title") }}</h3>
             <v-card-text>
               <p class="text-center">
                 {{ $t("about.about_me") }}

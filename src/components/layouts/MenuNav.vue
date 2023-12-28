@@ -61,10 +61,12 @@
         <img
           v-if="lang === 'es'"
           :src="icons.flagArg"
+          alt=""
         >
         <img
           v-else
           :src="icons.flagUSA"
+          alt=""
         >
       </v-avatar>
       <div class="mr-2">

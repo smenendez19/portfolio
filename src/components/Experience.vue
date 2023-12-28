@@ -1,38 +1,38 @@
 <template>
   <v-container fill-height>
-    <v-card
-      class="pa-5 rounded-xl"
+    <v-row
+      class="ma-auto"
     >
-      <v-row
-        class="ma-auto"
+      <v-col>
+        <h3 class="text-start">
+          {{ $t("experience.title") }}
+        </h3>
+      </v-col>
+    </v-row>
+    <v-row justify="center">
+      <v-card
+        class="pa-5 rounded-xl"
+        width="90%"
+        height="100%"
       >
-        <v-col>
-          <div class="text-start">
-            <h3>
-              {{ $t("experience.title") }}
-            </h3>
-          </div>
-        </v-col>
-      </v-row>
-      <div
-        v-for="exp in experience"
-        :key="exp"
-        class="my-5"
-      >
-        <v-row>
+        <v-row
+          v-for="exp in experience"
+          :key="exp"
+          class="my-5"
+        >
           <v-col
             cols="3"
             align="center"
           >
-            <div v-if="exp.image_logo">
-              <v-img
-                contain
-                class="rounded-lg mx-auto"
-                width="150px"
-                height="150px"
-                :src="'assets/images/' + exp.image_logo"
-              />
-            </div>
+            <v-img
+              v-if="exp.image_logo"
+              contain
+              class="rounded-lg"
+              width="150px"
+              height="150px"
+              :src="'assets/images/' + exp.image_logo"
+              alt=""
+            />
           </v-col>
           <v-divider
             vertical
@@ -40,23 +40,23 @@
           />
           <v-col>
             <v-card-text>
-              <div class="text-center my-1">
-                <h4>{{ exp.position }}</h4>
-              </div>
-              <p class="text-center">
+              <h4 class="text-center my-1">
+                {{ exp.position }}
+              </h4>
+              <p class="text-center my-1">
                 <strong>{{ exp.since }}</strong> 
                 <strong> - </strong>
                 <strong>{{ exp.until }}</strong>
               </p>
               <v-divider class="my-5" />
-              <p class="text-center my-5 mx-15 w-200">
+              <p class="text-center my-5">
                 {{ exp.description }}
               </p>
             </v-card-text>
           </v-col>
         </v-row>
-      </div>
-    </v-card>
+      </v-card>
+    </v-row>
   </v-container>
 </template>
 

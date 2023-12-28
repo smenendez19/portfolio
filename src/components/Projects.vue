@@ -1,10 +1,74 @@
 <template>
-  <v-container>
+  <v-container fill-height>
+    <v-row
+      class="ma-auto"
+    >
+      <v-col>
+        <div class="text-start">
+          <h3>
+            {{ $t("projects.title") }}
+          </h3>
+        </div>
+      </v-col>
+    </v-row>
+    <v-row justify="center">
+      <v-col
+        v-for="project in projects"
+        :key="project"
+        align="center"
+      >
+        <v-card
+          :title="project.name"
+          outlined
+          tile
+          width="500px"
+          height="100%"
+          class="d-flex flex-column"
+        >
+          <v-row>
+            <v-col>
+              <v-card-text>
+                <v-row>
+                  <v-img
+                    :src="'assets/images/' + project.image"
+                    class="grey darken-4"
+                    width="500px"
+                    height="200px"
+                  />
+                </v-row>
+                <v-row>
+                  <p class="text-center ma-5">
+                    {{ project.description }}
+                  </p>
+                </v-row>
+              </v-card-text>
+            </v-col>
+          </v-row>
+          <v-row
+            no-gutters
+          >
+            <v-col
+              align="end"
+              align-self="end"
+              class="border"
+            >
+              <v-btn
+                variant="text"
+                :href="project.url_github"
+                target="_blank"
+              >
+                {{ $t("projects.url_title") }}
+              </v-btn>
+            </v-col>
+          </v-row>
+        </v-card>
+      </v-col>
+    </v-row>
+    <!--
     <v-card
       class="pa-5 rounded-xl"
     >
       <v-row
-        justify="center"
         class="ma-auto"
       >
         <v-col>
@@ -55,6 +119,7 @@
         </div>
       </v-row>
     </v-card>
+    -->
   </v-container>
 </template>
 

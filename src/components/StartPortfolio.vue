@@ -51,6 +51,7 @@
             <CoursesComponent />
           </div>
         </v-lazy>
+        <v-divider />
         <v-lazy
           id="skills"
           :options="{ threshold: 1.0 }"

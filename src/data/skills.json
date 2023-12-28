@@ -24,15 +24,15 @@
     "web": [
         {
             "name": "Django",
-            "icon": null
+            "icon": "api"
         },
         {
             "name": "FastAPI",
-            "icon": null
+            "icon": "api"
         },
         {
             "name": "Spring Boot",
-            "icon": null
+            "icon": "api"
         },
         {
             "name": "Vue",
@@ -104,19 +104,19 @@
         },
         {
             "name": "Terraform",
-            "icon": null
+            "icon": "terraform"
         },
         {
             "name": "Windows",
-            "icon": null
+            "icon": "microsoft-windows"
         },
         {
             "name": "MacOS",
-            "icon": null
+            "icon": "apple"
         },
         {
             "name": "Linux",
-            "icon": null
+            "icon": "linux"
         }
     ]
 }

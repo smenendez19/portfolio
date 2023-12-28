@@ -10,8 +10,7 @@
         },
         "about": {
             "title": "About",
-            "about_me": "Working as Backend Developer in Uala since february 2023.\nWorked as a Tutor for courses in Coderhouse and Data Platform Engineer in different companies.\nCurrently studying Computer Engineering in the Universidad Nacional of La Matanza since beginning of 2016.\nIm self-taught, responsible and open-changed. I learned technologies and programming languages related to Data, Frontend and Backend."
-        },
+            "about_me": "I am currently employed as a Backend Developer at Uala, and I have had the pleasure of working with this amazing team since February 2023. Additionally, I have served as a Tutor for various courses at Coderhouse, a distinguished online-course platform. Previously, I held the position of Data Platform Engineer at several companies.\nIn terms of my formal education, I am currently in the third/fourth year of a six-year Software Engineering program at the University of La Matanza.\nFurthermore, I am a dedicated self-learner who is organized, responsible, and adaptable to change. I have acquired proficiency in a diverse range of technologies and programming languages related to Data, Frontend, and Backend development."        },
         "experience": {
             "title": "Experience",
             "since": "Since",
