@@ -10,12 +10,12 @@
         "lint-fix": "eslint --ext .js,.ts,.vue . --fix"
     },
     "dependencies": {
-        "@mdi/js": "7.3.67",
+        "@mdi/js": "7.4.47",
         "vite-plugin-vuetify": "2.0.1",
         "vue": "3.3.13",
         "vue-i18n": "9.8.0",
         "vue-router": "4.2.5",
-        "vuetify": "3.4.8"
+        "vuetify": "3.4.9"
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "5.0.0",
