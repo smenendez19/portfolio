@@ -11,7 +11,7 @@
     </v-row>
     <v-row justify="center">
       <v-card
-        class="pa-5 rounded-xl"
+        class="pa-5 rounded-xl elevation-24"
         width="90%"
         height="100%"
       >

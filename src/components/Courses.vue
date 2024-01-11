@@ -20,6 +20,7 @@
         dense
         multi-sort
         no-data-text="No data"
+        class="elevation-24"
       >
         <template #[`item.url`]="{ item }">
           <v-btn

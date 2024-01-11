@@ -4,7 +4,7 @@
       justify="center"
     >
       <v-card
-        elevation="20"
+        elevation="24"
       >
         <v-row
           class="mx-5 my-5"

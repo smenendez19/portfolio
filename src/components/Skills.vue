@@ -4,16 +4,14 @@
       class="ma-auto"
     >
       <v-col>
-        <div class="text-start">
-          <h3>
-            {{ $t("skills.title") }}
-          </h3>
-        </div>
+        <h2 class="text-start">
+          {{ $t("skills.title") }}
+        </h2>
       </v-col>
     </v-row>
     <v-row justify="center">
       <v-card
-        class="pa-5 rounded-xl"
+        class="pa-5 rounded-xl elevation-24"
       >
         <v-row class="ma-5">
           <h4>
@@ -28,9 +26,10 @@
             <v-card
               v-for="skill in skills.programming_languages"
               :key="skill"
-              class="px-5 mx-1 my-2"
+              class="px-5 mx-1 my-2 elevation-24"
               outlined
               tile
+              :color="getThemeColor() === 'dark' ? '#FFFFFF' : '#363636'"
             >
               <p class="text-center">
                 <v-icon
@@ -52,9 +51,10 @@
             <v-card
               v-for="skill in skills.web"
               :key="skill"
-              class="px-5 mx-1 my-2"
+              class="px-5 mx-1 my-2 elevation-24"
               outlined
               tile
+              :color="getThemeColor() === 'dark' ? '#FFFFFF' : '#363636'"
             >
               <p class="text-center">
                 <v-icon
@@ -78,9 +78,10 @@
             <v-card
               v-for="skill in skills.databases"
               :key="skill"
-              class="px-5 mx-1 my-2"
+              class="px-5 mx-1 my-2 elevation-24"
               outlined
               tile
+              :color="getThemeColor() === 'dark' ? '#FFFFFF' : '#363636'"
             >
               <p class="text-center">
                 <v-icon
@@ -105,9 +106,10 @@
             <v-card
               v-for="skill in skills.tech"
               :key="skill"
-              class="px-5 mx-1 my-2"
+              class="px-5 mx-1 my-2 elevation-24"
               outlined
               tile
+              :color="getThemeColor() === 'dark' ? '#FFFFFF' : '#363636'"
             >
               <p class="text-center">
                 <v-icon
@@ -179,7 +181,18 @@ export default {
       }
     }
     return {
-      getIcon
+      getIcon,
+      getThemeColor: () => {
+        const themeValue = localStorage.getItem('theme')
+        if (themeValue) {
+          if (themeValue === 'dark') {
+            return 'light'
+          }
+          else {
+            return 'dark'
+          }
+        }
+      }
     }
   },
   data: () => ({
