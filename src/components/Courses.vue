@@ -1,5 +1,12 @@
 <template>
   <v-container fill-height>
+    <v-row class="ma-auto">
+      <v-col>
+        <h2 class="text-start">
+          {{ $t("courses.title") }}
+        </h2>
+      </v-col>
+    </v-row>
     <v-row
       justify="center"
       class="ma-auto rounded-xl"
@@ -14,14 +21,6 @@
         multi-sort
         no-data-text="No data"
       >
-        <template #[`top`]>
-          <v-toolbar
-            flat
-            class="rounded-t-xl"
-          >
-            <v-toolbar-title>{{ $t("courses.title") }}</v-toolbar-title>
-          </v-toolbar>
-        </template>
         <template #[`item.url`]="{ item }">
           <v-btn
             class="rounded-xl"

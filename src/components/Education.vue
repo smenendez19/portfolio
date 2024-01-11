@@ -4,9 +4,9 @@
       class="ma-auto"
     >
       <v-col>
-        <h3 class="text-start">
+        <h2 class="text-start">
           {{ $t("education.title") }}
-        </h3>
+        </h2>
       </v-col>
     </v-row>
     <v-row justify="center">

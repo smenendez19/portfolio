@@ -4,72 +4,52 @@
     <v-main id="main">
       <v-container>
         <v-lazy
-          id="main"
-          :options="{ threshold: 1.0 }"
+          :options="{ threshold: 0.5 }"
           transition="fade-in-transition"
         >
-          <div>
-            <AvatarLinksComponent />
-          </div>
+          <AvatarLinksComponent />
         </v-lazy>
         <v-lazy
           id="about"
-          :options="{ threshold: 1.0 }"
+          :options="{ threshold: 0.5 }"
           transition="fade-in-transition"
         >
-          <div>
-            <AboutComponent />
-          </div>
+          <AboutComponent />
         </v-lazy>
-        <v-divider />
         <v-lazy
           id="experience"
-          :options="{ threshold: 1.0 }"
+          :options="{ threshold: 0.5 }"
           transition="fade-in-transition"
         >
-          <div>
-            <ExperienceComponent />
-          </div>
+          <ExperienceComponent />
         </v-lazy>
-        <v-divider />
         <v-lazy
           id="education"
-          :options="{ threshold: 1.0 }"
+          :options="{ threshold: 0.5 }"
           transition="slide-x-transition"
         >
-          <div>
-            <EducationComponent />
-          </div>
+          <EducationComponent />
         </v-lazy>
-        <v-divider />
         <v-lazy
           id="courses"
-          :options="{ threshold: 1.0 }"
+          :options="{ threshold: 0.5 }"
           transition="slide-x-transition"
         >
-          <div>
-            <CoursesComponent />
-          </div>
+          <CoursesComponent />
         </v-lazy>
-        <v-divider />
         <v-lazy
           id="skills"
-          :options="{ threshold: 1.0 }"
+          :options="{ threshold: 0.5 }"
           transition="slide-x-transition"
         >
-          <div>
-            <SkillsComponent />
-          </div>
+          <SkillsComponent />
         </v-lazy>
-        <v-divider />
         <v-lazy
           id="projects"
-          :options="{ threshold: 1.0 }"
+          :options="{ threshold: 0.5 }"
           transition="fade-in-transition"
         >
-          <div>
-            <ProjectsComponent />
-          </div>
+          <ProjectsComponent />
         </v-lazy>
       </v-container>
     </v-main>

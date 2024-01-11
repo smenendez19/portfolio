@@ -4,11 +4,9 @@
       class="ma-auto"
     >
       <v-col>
-        <div class="text-start">
-          <h3>
-            {{ $t("projects.title") }}
-          </h3>
-        </div>
+        <h2 class="text-start">
+          {{ $t("projects.title") }}
+        </h2>
       </v-col>
     </v-row>
     <v-row justify="center">

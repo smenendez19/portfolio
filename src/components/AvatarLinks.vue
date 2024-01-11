@@ -24,7 +24,9 @@
             <v-row
               justify="center"
             >
-              <h2>Santiago Ezequiel Menendez</h2>
+              <v-col>
+                <h2>Santiago Ezequiel Menendez</h2>
+              </v-col>
             </v-row>
             <v-row
               justify="center"
@@ -43,11 +45,19 @@
                       :id="contact.type"
                       v-bind="props"
                       variant="plain"
-                      :icon="getIcon(contact.type)"
                       :href="contact.url"
-                      aria-label=""
                       target="_blank"
-                    />
+                      :ripple="false"
+                    >
+                      <template #default>
+                        <v-row>
+                          <v-icon
+                            :icon="getIcon(contact.type)"
+                            size="30"
+                          />
+                        </v-row>
+                      </template>
+                    </v-btn>
                   </template>
                 </v-tooltip>
               </div>
@@ -61,11 +71,16 @@
                     v-bind="props"
                     variant="plain"
                     :href="$t(cv.url)"
-                    :icon="icons.mdiDownload"
-                    aria-label=""
                     download
-                    class="mx-1"
-                  />
+                    :ripple="false"
+                  >
+                    <template #default>
+                      <v-icon
+                        :icon="icons.mdiDownload"
+                        size="30"
+                      />
+                    </template>
+                  </v-btn>
                 </template>
               </v-tooltip>
             </v-row>

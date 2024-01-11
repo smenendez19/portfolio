@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.3.2
+
+- Modificaciones en el navbar.
+- Modificaciones en el Index (OG).
+- Cambio de tamaño de iconos e imagenes.
+- Se eliminaron etiquetas sin usar.
+- Modificaciones en los titulos de las secciones.
+
 ## 1.3.1
 
 - Agregado de librerias de compresion.

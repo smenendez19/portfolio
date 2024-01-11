@@ -6,25 +6,12 @@
       class="d-flex d-sm-none d-md-none d-lg-none d-xl-none"
       @click="drawer=true"
     />
-    <v-row
-      justify="start"
-    >
-      <v-col
-        cols="12"
-        class=""
-      >
-        <v-btn href="/portfolio/">
-          <h3>Portfolio</h3>
-        </v-btn>
-      </v-col>
-    </v-row>
     <v-tabs
       v-model="tab"
       class="d-none d-sm-flex"
-      center-active
+      align-tabs="center"
       dark
       show-arrows
-      hide-slider
     >
       <v-tab @click="goToComponent('main')">
         {{ $t("menu.about") }}
@@ -50,12 +37,15 @@
       class="mr-2"
       @click="toggleTheme"
     >
-      <v-icon :icon="icons.mdiBrightness6" />
+      <v-icon
+        :icon="icons.mdiBrightness6"
+        size="30"
+      />
     </v-btn>
     <v-btn @click="changeLang">
       <v-avatar
         class="mr-2"
-        size="24"
+        size="30"
         tile
       >
         <img
