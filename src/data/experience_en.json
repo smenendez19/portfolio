@@ -1,36 +1,36 @@
 {
-    "job_experience": [
-        {
-            "company": "Ualá",
-            "image_logo": "uala-logo.png",
-            "position": "Backend Developer",
-            "since": "February 2023",
-            "until": "Present",
-            "description": "Part of Platform team, Backend Developer contributing to development of solutions for projects within AWS platform. Use technologies like Java, Go, and Python, implementation of services like DynamoDB, Lambdas, API Gateway, Terraform, and GitHub Actions. Worked within microservices architecture framework, optimizing efficiency and scalability of systems."
-        },
-        {
-            "company": "Ualá",
-            "image_logo": "uala-logo.png",
-            "position": "Data Platform Engineer",
-            "since": "September 2021",
-            "until": "February 2023",
-            "description" : "Entered the Data Platform team at the company, involved in data migration, application development to facilitate pipeline assembly, and incident resolution. Applied methodologies and work methods, researching tools and technologies for the rest of the data area.Contributed to the creation of the data platform for internal users using Python and FastAPI for the backend, VueJS for the frontend, and technologies such as Docker, GCP, PostgreSQL, BigQuery, and Airflow"
-        },
-        {
-            "company": "CoderHouse",
-            "image_logo": "coderhouse-logo.png",
-            "position": "Tutor",
-            "since": "March 2022",
-            "until": "July 2022",
-            "description": "Worked as tutor for Coderhouse supporting courses in Python and Django."
-        },
-        {
-            "company": "Ergo Renova",
-            "image_logo": "ergo-logo.png",
-            "position": "Data Engineer",
-            "since": "January 2019",
-            "until": "September 2021",
-            "description" : "Worked as Data Enginner for Ergo Renova in the projects of Movistar, GIRE and Telecom Argentina.\nI worked building ETLs, developing APIs, processing data, ingestion of data and data mining."
-        }
-    ]
+  "job_experience": [
+    {
+      "company": "Ualá",
+      "image_logo": "uala-logo.png",
+      "position": "Backend Developer",
+      "since": "February 2023",
+      "until": "Present",
+      "description": "Joined to the Shared Services and Collections team as a Backend Developer in February 2023.<br/>Contributed to development of solutions for loans and credits transactions within AWS platform supporting more than thousands of daily transactions with external services.<br/>Impacted good practices in the development of microservices and deployment of software in the cloud and reduced costs in 90%.<br/>Solved solutions for several bugs and errors in the services, reduced common errors in 50%.<br/>Utilized technologies like Java, Go, and Python, implementation of services like DynamoDB, Lambdas, API Gateway, Terraform, and GitHub Actions.<br/>Utilized microservices architecture framework, optimizing efficiency and scalability of systems"
+    },
+    {
+      "company": "Ualá",
+      "image_logo": "uala-logo.png",
+      "position": "Data Platform Engineer",
+      "since": "September 2021",
+      "until": "February 2023",
+      "description": "Joined to Data Platform team as a Data Platform Engineer in September 2021.<br/>Involved in data migration, application development to facilitate pipeline assembly, and incident resolution.<br/>Applied methodologies and work methods, researched tools and technologies for the rest of the data area and improved deployments and solutions in data problems, reduced costs in 90%, optimized work 50% faster and facilitated Data Team to the incorporation of new tools and technologies.<br/>Contributed to the creation of the data platform for internal users using Python and FastAPI for the backend, VueJS for the frontend, and technologies such as Docker, GCP, PostgreSQL, BigQuery, and Airflow, improved solutions of other teams’ requests in 70% and problem resolutions 50% faster."
+    },
+    {
+      "company": "CoderHouse",
+      "image_logo": "coderhouse-logo.png",
+      "position": "Tutor",
+      "since": "March 2022",
+      "until": "July 2022",
+      "description": "Joined to Coderhouse as Python Tutor in freelance mode in March 2022.<br/>Collaborated for Python and Django courses, contributed to help students with their first steps and projects in Python and Django."
+    },
+    {
+      "company": "Ergo Renova",
+      "image_logo": "ergo-logo.png",
+      "position": "Data Engineer",
+      "since": "January 2019",
+      "until": "September 2021",
+      "description": "Joined as Data Engineer for Ergo Renova for important clients and companies in January 2019.<br/>Developed several services and processes of ETL for Movistar in their Hadoop ecosystem, used tech as Python, Bash, Spark, GitLab and Teradata SQL.<br/>Contributed to the migration of the Datawarehouse for Telecom to Google Cloud Platform, used tech as Python, DataFlow, Kafka, Hadoop and GCP Services.<br/>Developed automated services for obtaining of social media sources for Gire and performed analytics with Python, Bash, Oracle SQL and Machine Learning."
+    }
+  ]
 }

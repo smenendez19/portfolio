@@ -1,8 +1,8 @@
-# Portafolio - Santiago Menendez
+# Portfolio - Santiago Menendez
 
 ## Descripcion
 
-Proyecto web de portafolio hecho desde 0 usando Vue y Vuetify.
+Proyecto web de portfolio hecho desde 0 usando Vue y Vuetify.
 
 ## Uso e implementacion
 
@@ -26,7 +26,7 @@ Las librerias que utiliza el portfolio son las siguientes:
 
 - Vue 3
 - Vuetify 3
-- Material Design Icons
+- Material Design Icons (MDI)
 - I18N
 - Vite
 - Vue Router
@@ -41,11 +41,9 @@ Para implementar en Github Pages, se debe realizar lo siguiente:
 - Ejecutar npm run build para construir los archivos estaticos
 - Ejecutar los siguientes comandos para subir los archivos a la rama gh-pages:
 
-    git add dist -f && git commit -m "Upload to gh-pages"
-   
-    git push origin \`git subtree split --prefix dist master\`:gh-pages --force
-    
-    git reset --hard HEAD^1
+        git add dist -f && git commit -m "Upload to gh-pages"
+        git push origin \`git subtree split --prefix dist master\`:gh-pages --force
+        git reset --hard HEAD^1
 
 Nota: Por lo general hay otras formas de hacerlo, pero no terminaban por actualizar la rama y por lo tanto no funcionaron.
 

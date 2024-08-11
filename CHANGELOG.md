@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.3.3
+
+- Librerias actualizadas.
+- Cambio en los colores de los temas.
+- Actualizacion de contenido de experiencia y CV.
+- Correccion de bugs menores.
+
 ## 1.3.2
 
 - Modificaciones en el navbar.

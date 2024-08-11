@@ -9,19 +9,17 @@
   </v-footer>
 </template>
 
-
 <script>
 export default {
-  name: 'FooterComponent',
+  name: "FooterComponent",
   data: () => ({
-    lang : "ES"
+    lang: "ES",
   }),
   async created() {
-    const lang = localStorage.getItem('lang')
-    if (lang) this.lang = lang
-  }
-}
+    const lang = localStorage.getItem("lang");
+    if (lang) this.lang = lang;
+  },
+};
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

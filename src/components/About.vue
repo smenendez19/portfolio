@@ -8,11 +8,7 @@
       </v-col>
     </v-row>
     <v-row justify="center">
-      <v-card
-        class="pa-5 rounded-xl elevation-24"
-        width="90%"
-        height="100%"
-      >
+      <v-card class="pa-5 rounded-xl elevation-24" width="90%" height="100%">
         <v-row class="my-5">
           <v-col>
             <v-card-text>
@@ -29,9 +25,8 @@
 
 <script>
 export default {
-  name: "AboutComponent"
-}
+  name: "AboutComponent",
+};
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

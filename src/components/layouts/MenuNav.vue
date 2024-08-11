@@ -1,10 +1,8 @@
 <template>
-  <v-app-bar
-    height="50"
-  >
+  <v-app-bar height="50">
     <v-app-bar-nav-icon
       class="d-flex d-sm-none d-md-none d-lg-none d-xl-none"
-      @click="drawer=true"
+      @click="drawer = true"
     />
     <v-tabs
       v-model="tab"
@@ -33,50 +31,23 @@
       </v-tab>
     </v-tabs>
     <v-spacer />
-    <v-btn
-      class="mr-2"
-      @click="toggleTheme"
-    >
-      <v-icon
-        :icon="icons.mdiBrightness6"
-        size="30"
-      />
+    <v-btn class="mr-2" @click="toggleTheme">
+      <v-icon :icon="icons.mdiBrightness6" size="30" />
     </v-btn>
     <v-btn @click="changeLang">
-      <v-avatar
-        class="mr-2"
-        size="30"
-        tile
-      >
-        <img
-          v-if="lang === 'es'"
-          :src="icons.flagArg"
-          alt=""
-        >
-        <img
-          v-else
-          :src="icons.flagUSA"
-          alt=""
-        >
+      <v-avatar class="mr-2" size="30" tile>
+        <img v-if="lang === 'es'" :src="icons.flagArg" alt="" />
+        <img v-else :src="icons.flagUSA" alt="" />
       </v-avatar>
       <div class="mr-2">
         {{ lang }}
       </div>
     </v-btn>
   </v-app-bar>
-  <v-navigation-drawer
-    v-model="drawer"
-    temporary
-  >
-    <v-list
-      density="compact"
-      nav
-    >
+  <v-navigation-drawer v-model="drawer" temporary>
+    <v-list density="compact" nav>
       <div>
-        <div
-          v-for="(item, i) in items"
-          :key="item"
-        >
+        <div v-for="(item, i) in items" :key="item">
           <v-list-item @click="goToComponent(components[i])">
             {{ item.charAt(0).toUpperCase() + item.slice(1) }}
           </v-list-item>
@@ -87,53 +58,49 @@
 </template>
 
 <script>
-import { useTheme } from 'vuetify'
-import { mdiBrightness6 } from '@mdi/js';
-import flagArg from "@/assets/icons/flags/argentina.png"
-import flagUSA from "@/assets/icons/flags/usa.png"
+import { useTheme } from "vuetify";
+import { mdiBrightness6 } from "@mdi/js";
+import flagArg from "@/assets/icons/flags/argentina.png";
+import flagUSA from "@/assets/icons/flags/usa.png";
 
 export default {
   name: "MenuNavComponent",
   setup() {
-    const theme = useTheme()
-    const themeValue = localStorage.getItem('theme')
+    const theme = useTheme();
+    const themeValue = localStorage.getItem("theme");
     if (themeValue) {
-      if (themeValue === 'dark') {
-        theme.global.name.value =  'dark'
+      if (themeValue === "dark") {
+        theme.global.name.value = "dark";
+      } else if (themeValue === "light") {
+        theme.global.name.value = "light";
       }
-      else if (themeValue === 'light') {
-        theme.global.name.value =  'light'
-      }
-    }
-    else theme.global.name.value =  'dark'
+    } else theme.global.name.value = "dark";
     return {
       theme,
       toggleTheme: () => {
-        const themeValue = localStorage.getItem('theme')
+        const themeValue = localStorage.getItem("theme");
         if (themeValue) {
-          if (themeValue === 'dark') {
-            localStorage.setItem('theme', 'light')
-            theme.global.name.value =  'light'
+          if (themeValue === "dark") {
+            localStorage.setItem("theme", "light");
+            theme.global.name.value = "light";
+          } else {
+            localStorage.setItem("theme", "dark");
+            theme.global.name.value = "dark";
           }
-          else {
-            localStorage.setItem('theme', 'dark')
-            theme.global.name.value =  'dark'
-          }
+        } else {
+          localStorage.setItem("theme", "dark");
         }
-        else {
-          localStorage.setItem('theme', 'dark')
-        }
-      }
-    }
+      },
+    };
   },
   data: () => ({
     lang: "es",
     drawer: false,
-    tab : null,
+    tab: null,
     icons: {
       mdiBrightness6,
       flagArg,
-      flagUSA
+      flagUSA,
     },
     components: [
       "about",
@@ -141,8 +108,8 @@ export default {
       "education",
       "courses",
       "skills",
-      "projects"    
-    ]
+      "projects",
+    ],
   }),
   computed: {
     items() {
@@ -152,39 +119,40 @@ export default {
         this.$t("menu.education"),
         this.$t("menu.courses"),
         this.$t("menu.skills"),
-        this.$t("menu.projects")
-      ]
-    }
+        this.$t("menu.projects"),
+      ];
+    },
   },
   async created() {
-    const lang = localStorage.getItem('lang')
+    const lang = localStorage.getItem("lang");
     if (lang) {
-      this.lang = lang
-    }
-    else {
-      this.lang = "es"
-      localStorage.setItem('lang', this.lang)
+      this.lang = lang;
+    } else {
+      this.lang = "es";
+      localStorage.setItem("lang", this.lang);
     }
   },
   methods: {
     async goToComponent(componentId) {
-      document.getElementById(componentId.toLowerCase()).scrollIntoView({ behavior: "smooth" })
-      if (this.drawer) this.drawer = false
+      document
+        .getElementById(componentId.toLowerCase())
+        .scrollIntoView({ behavior: "smooth" });
+      if (this.drawer) this.drawer = false;
     },
     async changeLang() {
-      const lang = this.lang === 'es' ? 'en' : 'es'
-      this.lang = lang
-      this.$i18n.locale = lang.toLowerCase()
-      localStorage.setItem('lang', this.lang)
-    }
-  }
-}
+      const lang = this.lang === "es" ? "en" : "es";
+      this.lang = lang;
+      this.$i18n.locale = lang.toLowerCase();
+      localStorage.setItem("lang", this.lang);
+    },
+  },
+};
 </script>
 
 <style scoped>
 .fixed-bar {
-    position: sticky;
-    top: 6em;
-    z-index: 2;
+  position: sticky;
+  top: 6em;
+  z-index: 2;
 }
 </style>

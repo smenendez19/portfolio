@@ -3,10 +3,7 @@
     <MenuNavComponent />
     <v-main id="main">
       <v-container>
-        <v-lazy
-          :options="{ threshold: 0.5 }"
-          transition="fade-in-transition"
-        >
+        <v-lazy :options="{ threshold: 0.5 }" transition="fade-in-transition">
           <AvatarLinksComponent />
         </v-lazy>
         <v-lazy
@@ -58,18 +55,18 @@
 </template>
 
 <script>
-import MenuNavComponent from '@/components/layouts/MenuNav.vue'
-import FooterComponent from '@/components/layouts/Footer.vue'
-import AboutComponent from '@/components/About.vue'
-import EducationComponent from '@/components/Education.vue'
-import ExperienceComponent from '@/components/Experience.vue'
-import SkillsComponent from '@/components/Skills.vue'
-import ProjectsComponent from '@/components/Projects.vue'
-import AvatarLinksComponent from '@/components/AvatarLinks.vue'
-import CoursesComponent from '@/components/Courses.vue'
+import MenuNavComponent from "@/components/layouts/MenuNav.vue";
+import FooterComponent from "@/components/layouts/Footer.vue";
+import AboutComponent from "@/components/About.vue";
+import EducationComponent from "@/components/Education.vue";
+import ExperienceComponent from "@/components/Experience.vue";
+import SkillsComponent from "@/components/Skills.vue";
+import ProjectsComponent from "@/components/Projects.vue";
+import AvatarLinksComponent from "@/components/AvatarLinks.vue";
+import CoursesComponent from "@/components/Courses.vue";
 
 export default {
-  name: 'PortfolioComponent',
+  name: "PortfolioComponent",
   components: {
     AvatarLinksComponent,
     MenuNavComponent,
@@ -79,17 +76,14 @@ export default {
     ExperienceComponent,
     SkillsComponent,
     ProjectsComponent,
-    CoursesComponent
+    CoursesComponent,
   },
-  data: () => ({
-  }),
+  data: () => ({}),
   async mounted() {
     document.title = this.$route.meta.title;
   },
-  methods: {
-  },
-}
+  methods: {},
+};
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

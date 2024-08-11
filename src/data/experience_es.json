@@ -6,7 +6,7 @@
             "position": "Backend Developer",
             "since": "Febrero 2023",
             "until": "Presente",
-            "description": "Formo parte del equipo de Platform como Desarrollador Backend, contribuyendo al desarrollo de soluciones para proyectos dentro en la plataforma de AWS. Utilizo tecnologías como Java, Go y Python, así como la implementación de servicios como DynamoDB, Lambdas, API Gateway, Terraform y Github Actions. He trabajado dentro del marco de arquitectura de microservicios que optimiza la eficiencia y la escalabilidad de los sistemas."
+            "description": "Me uní al equipo de Shared Services y Cobros como BackendDeveloper en febrero de 2023.<br/>Desarrollé soluciones para transacciones de préstamos y créditos en AWS, soportando miles de transacciones diarias.<br/>Fomenté buenas prácticas en microservicios y despliegue en la nube, reduciendo costos en un 90% y mejorando la resolución de errores.<br/>Utilicé tecnologías como Java, Go, Python, DynamoDB, Lambda, API Gateway, Terraform y GitHub Actions para optimizar la eficiencia y escalabilidad de los sistemas"
         },
         {
             "company": "Ualá",
@@ -14,7 +14,7 @@
             "position": "Data Platform Engineer",
             "since": "Septiembre 2021",
             "until": "Febrero 2023",
-            "description": "Proyecto de Plataforma de Datos en Google Cloud donde participo de la migración de datos, armado de aplicaciones para facilitar el armado de pipelines y solución de incidencias, aplicación de metodologías y formas de trabajo con investigación de herramientas y tecnologías para el resto del area de Datos.\nContribuí a la creación de la plataforma de datos para usuarios internos utilizando Python y FastAPI para el backend, VueJS para el frontend, y tecnologías como Docker, GCP, PostgreSQL, BigQuery y Airflow.\nDesde que ingrese al equipo se lograron que las soluciones y pipelines de datos sean un 50 % más rápidas que antes, y se implementó un método eficiente de trabajo con GitHub, Agile y software interno creado para mejor facilidad."
+            "description": "Me uní al equipo de Data Platform como Data Platform Engineer en septiembre de 2021, participando en la migración de datos y optimización de pipelines.<br/>Implementé metodologías avanzadas, mejorando despliegues y reduciendo costos en un 90% y aumentando la eficiencia en un 50%.<br/>Contribuí a la creación de una plataforma de datos interna utilizando Python, FastAPI, VueJS, Docker, GCP, PostgreSQL, BigQuery y Airflow, optimizando la resolución de solicitudes en un 70% y acelerando la solución de problemas en un 50%."
         },
         {
             "company": "CoderHouse",
@@ -22,7 +22,7 @@
             "position": "Tutor",
             "since": "Marzo 2022",
             "until": "Julio 2022",
-            "description": "Trabaje en Coderhouse como tutor para los cursos de Python y Django de la empresa."
+            "description": "Me incorpore a Coderhouse como Tutor de Python en modalidad freelance en marzo de 2022.<br/>Colabore para cursos de Python y Django contribuyendo a ayudar a los estudiantes con sus primeros pasos y proyectos en Python"
         },
         {
             "company": "Ergo Renova",
@@ -30,7 +30,7 @@
             "position": "Data Engineer",
             "since": "Enero 2019",
             "until": "Septiembre 2021",
-            "description": "Me desempeñe como Data Engineer en proyectos de Data para Movistar, GIRE y Telecom Argentina realizando tareas de desarrollo de pipelines, APIs, ingestas, procesamiento y mineria de datos."
+            "description": "Data Engineer en Ergo Renova desde enero de 2019, desarrollando servicios y procesos ETL para clientes como Movistar en un ecosistema Hadoop, utilizando Python, Bash, Spark, GitLab y Teradata SQL.<br/>Contribuí a la migración del Data Warehouse de Telecom a Google Cloud Platform, empleando tecnologías como Python, DataFlow, Kafka y GCP Services.<br/>Desarrollé servicios automatizados para la obtención de datos de redes sociales para Gire y realicé análisis con Python, Bash, Oracle SQL y Machine Learning."
         }
     ]
 }

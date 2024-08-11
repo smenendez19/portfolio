@@ -10,7 +10,8 @@
         },
         "about": {
             "title": "About",
-            "about_me": "I am currently employed as a Backend Developer at Uala, and I have had the pleasure of working with this amazing team since February 2023. Additionally, I have served as a Tutor for various courses at Coderhouse, a distinguished online-course platform. Previously, I held the position of Data Platform Engineer at several companies.\nIn terms of my formal education, I am currently in the third/fourth year of a six-year Software Engineering program at the University of La Matanza.\nFurthermore, I am a dedicated self-learner who is organized, responsible, and adaptable to change. I have acquired proficiency in a diverse range of technologies and programming languages related to Data, Frontend, and Backend development."        },
+            "about_me": "Backend Developer with more than 5 years of experience in designing and developing software solutions. Proficient in Python, Java, GitHub, AWS, and GCP, with a strong background in problem-solving and software design. Adaptable to changes, responsible, and a team player."
+        },
         "experience": {
             "title": "Experience",
             "since": "Since",
@@ -64,7 +65,7 @@
         },
         "about": {
             "title": "Sobre mi",
-            "about_me": "Actualmente trabajo como Desarrollador Backend en Ualá desde febrero de 2023.\nTrabaje como Data Platform Engineer en Ualá y Ergo Renova, y como Tutor en CoderHouse\nEstudiante de Ingeniería Informática en la Universidad Nacional de La Matanza desde 2016.\nSoy una persona autodidacta, responsable, capaz de organizarme en las tareas, poder trabajar en equipo y adaptable a los cambios que surjan durante los proyectos.\nHe trabajado con diversas tecnologías y lenguajes de programación relacionados a Data, Backend y Frontend."
+            "about_me": "Desarrollador Backend con de experiencia en el diseño y desarrollo de soluciones de software. Competente en Python, Java, GitHub, AWS y GCP, con una sólida formación en resolución de problemas y diseño de software."
         },
         "experience": {
             "title": "Experiencia",

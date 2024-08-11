@@ -3,15 +3,15 @@
         {
             "type": "linkedin",
             "text": "Linkedin",
-            "url_text": "linkedin.com/in/menendezsantiago",
-            "url": "https://www.linkedin.com/in/menendezsantiago",
+            "url_text": "linkedin.com/in/smenendez19",
+            "url": "https://www.linkedin.com/in/smenendez19",
             "icon": "mdi-linkedin"
         },
         {
             "type": "github",
             "text": "Github",
-            "url_text": "github.com/SantiMenendez19",
-            "url": "https://github.com/SantiMenendez19",
+            "url_text": "github.com/smenendez19",
+            "url": "https://github.com/smenendez19",
             "icon": "mdi-github"
         },
         {
