@@ -3,3 +3,37 @@
 #app {
   font-family: 'Nunito Sans', sans-serif;
 }
+
+/* Tema claro - texto negro */
+.v-theme--light {
+  color: #000000 !important;
+}
+
+.v-theme--light .v-card,
+.v-theme--light .v-card-text,
+.v-theme--light h1,
+.v-theme--light h2,
+.v-theme--light h3,
+.v-theme--light h4,
+.v-theme--light h5,
+.v-theme--light h6,
+.v-theme--light p {
+  color: #000000 !important;
+}
+
+/* Tema oscuro - texto blanco */
+.v-theme--dark {
+  color: #FFFFFF !important;
+}
+
+.v-theme--dark .v-card,
+.v-theme--dark .v-card-text,
+.v-theme--dark h1,
+.v-theme--dark h2,
+.v-theme--dark h3,
+.v-theme--dark h4,
+.v-theme--dark h5,
+.v-theme--dark h6,
+.v-theme--dark p {
+  color: #FFFFFF !important;
+}

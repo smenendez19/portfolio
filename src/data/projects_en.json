@@ -1,28 +1,58 @@
 {
     "projects": [
         {
+            "name": "Ferminator",
+            "url_github": "https://github.com/smenendez19/ferminator-backend",
+            "description": "Final project for Computer Engineering degree",
+            "image": "projects/ferminator.png"
+        },
+        {
+            "name": "Linktree",
+            "url_github": "https://github.com/smenendez19/linktree",
+            "description": "Linktree clone made with Vue.js and CSS deployed on Github Pages",
+            "image": "projects/linktree.png"
+        },
+        {
+            "name": "Tank Game",
+            "url_github": "https://github.com/smenendez19/tank_game",
+            "description": "Battle City clone made in Python with Pygame",
+            "image": "projects/tank_game.png"
+        },
+        {
+            "name": "Tetris terminal game",
+            "url_github": "https://github.com/smenendez19/tetris_game",
+            "description": "Tetris game for terminal programmed in Python",
+            "image": "projects/tetris_game.png"
+        },
+        {
+            "name": "Shorturl rest API",
+            "url_github": "https://github.com/smenendez19/shorturl_backend",
+            "description": "REST API for URL shortening using FastAPI and SQLite",
+            "image": "projects/shorturl_api.png"
+        },
+        {
             "name": "To Do List web app",
             "url_github": "https://github.com/SantiMenendez19/to_do_list_web",
-            "description": "To Do list web app in Django using HTML5, Bootstrap, CSS, Python and SQLite/MongoDB as databases",
-            "image" : "projects/to_do_list.png"
+            "description": "To Do list web app developed in Django using HTML5, Bootstrap, CSS, Python and SQLite/MongoDB as databases",
+            "image": "projects/to_do_list.png"
         },
         {
-            "name" : "Scraper MeLi",
-            "url_github" : "https://github.com/SantiMenendez19/scraper_web_ml",
-            "description" : "Scraper of products for Mercado Libre, using Python and BeatifulSoup. Includes a GUI for searching products and analize the results.",
-            "image" : "projects/scraper_ml.png"
+            "name": "Scraper MeLi",
+            "url_github": "https://github.com/SantiMenendez19/scraper_web_ml",
+            "description": "Mercado Libre product scraper made with Python and BeautifulSoup 4. Includes a GUI for quick result analysis",
+            "image": "projects/scraper_ml.png"
         },
         {
-            "name" : "Hangman game discord bot",
-            "url_github" : "https://github.com/SantiMenendez19/ahorcado_bot_discord",
-            "description" : "Bot client of Hangman game for Discord programmed in Python",
-            "image" : "projects/ahorcado_discord.png"
+            "name": "Hangman discord bot",
+            "url_github": "https://github.com/SantiMenendez19/ahorcado_bot_discord",
+            "description": "Hangman game bot to implement on Discord servers developed in Python",
+            "image": "projects/hangman_discord_bot.png"
         },
         {
-            "name" : "Snake game",
-            "url_github" : "https://github.com/SantiMenendez19/snake_game",
-            "description": "A snake game programmed in Python",
-            "image" : "projects/snake_game.png"
+            "name": "Snake game",
+            "url_github": "https://github.com/SantiMenendez19/snake_game",
+            "description": "Snake game developed in Python with AI algorithms for training",
+            "image": "projects/snake_game.png"
         }
     ]
 }

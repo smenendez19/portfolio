@@ -26,6 +26,9 @@
             :href="item.url"
             target="blank"
           >
+            <template #prepend>
+              <v-icon :icon="icons.mdiOpenInNew"></v-icon>
+            </template>
             Link
           </v-btn>
         </template>
@@ -35,18 +38,19 @@
 </template>
 
 <script>
-import coursesDataES from "@/data/courses_es.json";
-import coursesDataEN from "@/data/courses_en.json";
+import coursesData from "@/data/courses.json";
+import { mdiOpenInNew } from "@mdi/js";
 
 export default {
   name: "CoursesComponent",
   data: () => ({
-    education: null,
     courses: null,
-    lang: "es",
     datatable: {
       itemsPerPage: 10,
       sortBy: [{ key: "since", order: "desc" }],
+    },
+    icons: {
+      mdiOpenInNew,
     },
   }),
   computed: {
@@ -90,25 +94,8 @@ export default {
       ];
     },
   },
-  watch: {
-    "$i18n.locale": function (newLang) {
-      this.lang = newLang;
-      this.getDataJSON();
-    },
-  },
-  async created() {
-    const lang = localStorage.getItem("lang");
-    if (lang) this.lang = lang;
-    this.getDataJSON();
-  },
-  methods: {
-    async getDataJSON() {
-      if (this.lang === "es") {
-        this.courses = coursesDataES.courses;
-      } else {
-        this.courses = coursesDataEN.courses;
-      }
-    },
+  created() {
+    this.courses = coursesData.courses;
   },
 };
 </script>

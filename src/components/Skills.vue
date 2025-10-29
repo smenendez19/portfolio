@@ -128,6 +128,9 @@ import {
   mdiLinux,
   mdiApple,
   mdiApi,
+  mdiReact,
+  mdiChartLine,
+  mdiTransmissionTower,
 } from "@mdi/js";
 
 export default {
@@ -177,6 +180,12 @@ export default {
           return mdiApple;
         case "api":
           return mdiApi;
+        case "react":
+          return mdiReact;
+        case "grafana":
+          return mdiChartLine;
+        case "mqtt":
+          return mdiTransmissionTower;
         default:
           return mdiCircleOffOutline;
       }

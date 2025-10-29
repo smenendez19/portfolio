@@ -1,54 +1,53 @@
 <template>
-  <v-app-bar height="50">
+  <v-app-bar height="60">
     <v-app-bar-nav-icon
       class="d-flex d-sm-none d-md-none d-lg-none d-xl-none"
       @click="drawer = true"
     />
+    <v-spacer class="d-none d-sm-flex" />
     <v-tabs
       v-model="tab"
       class="d-none d-sm-flex"
       align-tabs="center"
       dark
       show-arrows
+      center-active
     >
-      <v-tab @click="goToComponent('main')">
+      <v-tab href="#main">
         {{ $t("menu.about") }}
       </v-tab>
-      <v-tab @click="goToComponent('experience')">
+      <v-tab href="#experience">
         {{ $t("menu.experience") }}
       </v-tab>
-      <v-tab @click="goToComponent('education')">
+      <v-tab href="#education">
         {{ $t("menu.education") }}
       </v-tab>
-      <v-tab @click="goToComponent('courses')">
+      <v-tab href="#courses">
         {{ $t("menu.courses") }}
       </v-tab>
-      <v-tab @click="goToComponent('skills')">
+      <v-tab href="#skills">
         {{ $t("menu.skills") }}
       </v-tab>
-      <v-tab @click="goToComponent('projects')">
+      <v-tab href="#projects">
         {{ $t("menu.projects") }}
       </v-tab>
     </v-tabs>
     <v-spacer />
-    <v-btn class="mr-2" @click="toggleTheme">
+    <v-btn class="mr-2" icon @click="toggleTheme">
       <v-icon :icon="icons.mdiBrightness6" size="30" />
     </v-btn>
-    <v-btn @click="changeLang">
-      <v-avatar class="mr-2" size="30" tile>
+    <v-btn icon @click="changeLang">
+      <v-avatar size="30" tile>
         <img v-if="lang === 'es'" :src="icons.flagArg" alt="" />
         <img v-else :src="icons.flagUSA" alt="" />
       </v-avatar>
-      <div class="mr-2">
-        {{ lang }}
-      </div>
     </v-btn>
   </v-app-bar>
   <v-navigation-drawer v-model="drawer" temporary>
     <v-list density="compact" nav>
       <div>
         <div v-for="(item, i) in items" :key="item">
-          <v-list-item @click="goToComponent(components[i])">
+          <v-list-item :href="`#${components[i]}`" @click="drawer = false">
             {{ item.charAt(0).toUpperCase() + item.slice(1) }}
           </v-list-item>
         </div>
@@ -133,12 +132,6 @@ export default {
     }
   },
   methods: {
-    async goToComponent(componentId) {
-      document
-        .getElementById(componentId.toLowerCase())
-        .scrollIntoView({ behavior: "smooth" });
-      if (this.drawer) this.drawer = false;
-    },
     async changeLang() {
       const lang = this.lang === "es" ? "en" : "es";
       this.lang = lang;
@@ -154,5 +147,11 @@ export default {
   position: sticky;
   top: 6em;
   z-index: 2;
+}
+</style>
+
+<style>
+html {
+  scroll-padding-top: 80px;
 }
 </style>

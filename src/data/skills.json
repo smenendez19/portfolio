@@ -9,6 +9,10 @@
             "icon": "javascript"
         },
         {
+            "name": "TypeScript",
+            "icon": "javascript"
+        },
+        {
             "name": "Go",
             "icon": "go"
         },
@@ -37,6 +41,10 @@
         {
             "name": "Vue",
             "icon": "vue"
+        },
+        {
+            "name": "React",
+            "icon": "react"
         },
         {
             "name": "HTML",
@@ -83,6 +91,10 @@
             "icon": "aws"
         },
         {
+            "name": "DigitalOcean",
+            "icon": "gcp"
+        },
+        {
             "name": "Docker",
             "icon": "docker"
         },
@@ -105,6 +117,14 @@
         {
             "name": "Terraform",
             "icon": "terraform"
+        },
+        {
+            "name": "MQTT",
+            "icon": "mqtt"
+        },
+        {
+            "name": "Grafana",
+            "icon": "grafana"
         },
         {
             "name": "Windows",

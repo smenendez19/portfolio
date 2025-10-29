@@ -10,7 +10,7 @@
         },
         "about": {
             "title": "About",
-            "about_me": "Backend Developer with more than 5 years of experience in designing and developing software solutions. Proficient in Python, Java, GitHub, AWS, and GCP, with a strong background in problem-solving and software design. Adaptable to changes, responsible, and a team player."
+            "about_me": "Software Engineer with more than 7 years of experience in designing and developing software solutions. Proficient in Python, Go, Java, GitHub, AWS, and GCP, with a strong background in problem-solving and software design. Adaptable to changes, responsible, and a team player."
         },
         "experience": {
             "title": "Experience",
@@ -45,7 +45,7 @@
         },
         "projects": {
             "title": "Projects",
-            "url_title": "Repository URL"
+            "url_title": "Link"
         },
         "contact": {
             "title": "Contact"
@@ -100,7 +100,7 @@
         },
         "projects": {
             "title": "Proyectos",
-            "url_title": "URL del repositorio"
+            "url_title": "Link"
         },
         "contact": {
             "title": "Contacto"

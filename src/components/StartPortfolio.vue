@@ -4,14 +4,14 @@
     <v-main id="main">
       <v-container>
         <v-lazy :options="{ threshold: 0.5 }" transition="fade-in-transition">
-          <AvatarLinksComponent />
-        </v-lazy>
-        <v-lazy
-          id="about"
-          :options="{ threshold: 0.5 }"
-          transition="fade-in-transition"
-        >
-          <AboutComponent />
+          <v-row id="about" class="ma-auto">
+            <v-col cols="12" md="4" class="d-flex">
+              <AvatarLinksComponent />
+            </v-col>
+            <v-col cols="12" md="8" class="d-flex">
+              <AboutComponent />
+            </v-col>
+          </v-row>
         </v-lazy>
         <v-lazy
           id="experience"

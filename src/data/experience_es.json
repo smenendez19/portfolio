@@ -3,10 +3,10 @@
         {
             "company": "Ualá",
             "image_logo": "uala-logo.png",
-            "position": "Backend Developer",
+            "position": "Software Engineer",
             "since": "Febrero 2023",
-            "until": "Presente",
-            "description": "Me uní al equipo de Shared Services y Cobros como BackendDeveloper en febrero de 2023.<br/>Desarrollé soluciones para transacciones de préstamos y créditos en AWS, soportando miles de transacciones diarias.<br/>Fomenté buenas prácticas en microservicios y despliegue en la nube, reduciendo costos en un 90% y mejorando la resolución de errores.<br/>Utilicé tecnologías como Java, Go, Python, DynamoDB, Lambda, API Gateway, Terraform y GitHub Actions para optimizar la eficiencia y escalabilidad de los sistemas"
+            "until": "Octubre 2025",
+            "description": "Me sumé al equipo de Backend Platform como Software Engineer en 2025. Desarrollé y mantuve soluciones generales para que otros equipos de tecnología puedan utilizar como envíos de notificaciones, emails, otp, documentos entre otros. También participé de migraciones de código a nueva infraestructura y lenguaje como Go. Me uní al equipo de Créditos como Backend Developer en febrero de 2023. Desarrollé soluciones para control de transacciones de préstamos y créditos en AWS, soportando un volumen alto de peticiones diarias. Fomenté buenas prácticas en microservicios y despliegue en la nube, reduciendo costos en un 90% y mejorando la resolución de errores. Utilicé tecnologías como Java, Go, Python, DynamoDB, Lambda, API Gateway, Terraform y GitHub Actions para optimizar la eficiencia y escalabilidad de los sistemas."
         },
         {
             "company": "Ualá",

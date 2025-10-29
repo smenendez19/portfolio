@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.4.0
+
+- Update info.
+- Update node modules.
+- Add carrousels.
+- Update projects.
+
 ## 1.3.3
 
 - Librerias actualizadas.

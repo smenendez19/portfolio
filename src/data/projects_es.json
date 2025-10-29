@@ -1,6 +1,36 @@
 {
     "projects": [
         {
+            "name": "Ferminator",
+            "url_github": "https://github.com/smenendez19/ferminator-backend",
+            "description": "Proyecto final de carrera de Ingenieria en Informatica",
+            "image": "projects/ferminator.png"
+        },
+        {
+            "name": "Linktree",
+            "url_github": "https://github.com/smenendez19/linktree",
+            "description": "Clon de linktree hecho con Vue.js y CSS desplegado en Github Pages",
+            "image": "projects/linktree.png"
+        },
+        {
+            "name": "Tank Game",
+            "url_github": "https://github.com/smenendez19/tank_game",
+            "description": "Clon de battle city hecho en Python con Pygame",
+            "image": "projects/tank_game.png"
+        },
+        {
+            "name": "Tetris terminal game",
+            "url_github": "https://github.com/smenendez19/tetris_game",
+            "description": "Juego de Tetris para terminal programado en Python",
+            "image": "projects/tetris_game.png"
+        },
+        {
+            "name": "Shorturl rest API",
+            "url_github": "https://github.com/smenendez19/shorturl_backend",
+            "description": "API REST para acortar URLs utilizando FastAPI y SQLite",
+            "image": "projects/shorturl_api.png"
+        },
+        {
             "name": "To Do List web app",
             "url_github": "https://github.com/SantiMenendez19/to_do_list_web",
             "description": "Lista de tareas web desarrollada en Django y utilizando HTML5, Bootstrap, CSS, Python y SQLite/MongoDB como bases de datos",
@@ -13,10 +43,10 @@
             "image": "projects/scraper_ml.png"
         },
         {
-            "name": "Bot Discord del Ahorcado",
+            "name": "Hangman discord bot",
             "url_github": "https://github.com/SantiMenendez19/ahorcado_bot_discord",
             "description": "Bot del juego del ahorcado para implementar en servidores de Discord realizado en Python",
-            "image": "projects/ahorcado_discord.png"
+            "image": "projects/hangman_discord_bot.png"
         },
         {
             "name": "Snake game",
